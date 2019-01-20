@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+.container {
+    width: 1164px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
+    height: 0; width: 0;
+}
+
+/* HEADER */
+
+header {
+    height: 100px;
+    border-bottom: 1px solid #ececec;
+}
+
+.headerInside {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerInside .logo {
+    line-height: 51px;
+    width: 165px;
+    background: url(../imgs/logo.png) no-repeat;
+    color: #222222;
+    font-size: 27px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    padding-left: 72px;
+}
+.headerInside .logo span {
+    color: #f16d7f;
+    font-weight: 400;
+}
+
+/* SEARCH */
+
+.headerInside .searchWrap {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden; /*чтобы не торчали уголки блоков с скруглёнными границами*/
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+
+.headerInside .searchWrap .searchBrowse {
+    height: inherit;
+    width: 90px;
+    box-sizing: border-box;
+    padding: 11px;
+    padding-right: 0;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 300;
+    border-right: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+}
+.headerInside .searchWrap input {
+    height: inherit;
+    box-sizing: border-box;
+    padding-left: 16px;
+    border: none;
+    width: 315px;
+}
+.headerInside .searchWrap button {
+    height: inherit;
+    box-sizing: border-box;
+    background: inherit;
+    width: 36px;
+    border: none;
+    border-left: 1px solid #e6e6e6;
+}
+
+/* /SEARCH */
+
+.headerInside .cart {
+    height: 29px;
+    width: 37px;
+    background: url(../imgs/cart.png) no-repeat;
+    margin-left: 350px;
+}
+
+.headerInside .myAccount {
+    margin-left: 26px;
+    background-color:  #f16d7f;
+    width: 130px;
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    border-radius: 3px;
+}
+
+/* /HEADER */
+
+/* TOP_NAVIGATION */
+
+.topNav {
+    height: 50px;
+    padding-left: 240px;
+    padding-top: 20px; 
+    box-sizing: border-box; /*Чтобы padding работал, как мне нужно*/
+    display: flex;
+}
+
+.topNav a {
+    display: block;
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700; 
+    margin-right: 50px;
+    color: #222222;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+}
+
+/* /TOP_NAVIGATION */
+
+/* TOP_BANNER */
+
+.topBannerWrap {
+    height: 610px;
+    width: 1600px;
+    background: #e8e8e8;
+}
+.topBanner {
+    background: url(../imgs/mainPageTopBanner.png) -180px;
+    height: inherit;
+    padding-top: 225px;
+    box-sizing: border-box;
+}
+
+.topBanner .topBannerRectangle {
+    height: 92px;
+    width: 12px;
+    background: url(../imgs/mainPageTopBannerRedRectangle.png);
+    float: left;
+}
+
+.topBanner .topBannerText p:first-child {
+    color: #222;
+    line-height: 45px;
+    font-size: 60px;
+    letter-spacing: 1.5px;
+}
+.topBanner .topBannerText span:first-child {
+    line-height: 65px;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.topBanner .topBannerText span:last-child {
+    color: #f16d7f;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* /TOP_BANNER */
+
+/* FIRSTSECTION */
+
+.firstSection {
+    margin-top: 100px;
+    box-sizing: border-box;
+    height: 920px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.firstSection div {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.firstSection div:last-child {
+    position: relative;
+    bottom: 281px;
+}
+.firstSection .firstSectionPics p {
+    position: absolute;
+    top: 45px;
+    background: white;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    color:  #222222;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+.firstSection div p span {
+    color:  #f16d7f;
+    font-size: 26px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+
+/* /FIRSTSECTION */
+
+/* FEATURED_ITEMS */
+
+.featuredItems h1 {
+    color:  #222222;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    letter-spacing: 0.75px;
+}
+.featuredItems h2 {
+    margin-top: 10px;
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    text-align: center;
+}
+
+.featuredItems .featuredItemsPics {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.featuredItems .featuredItemsPics .featuredItemsPic {
+    margin-right: 30px;
+    margin-top: 40px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    
+}
+
+.featuredItems .featuredItemsPics .featuredItemsPic p {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.featuredItems .featuredItemsPics .featuredItemsPic p span {
+    display: block;
+    margin-top: 15px;
+    color: #f16d7f;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+} 
+
+/* FEATURED_ITEMS_PICS_HOVER */
+
+.featuredItems .featuredItemsPics .featuredItemsPic {
+    position: relative;
+}
+
+.featuredItems .featuredItemsPics .featuredItemsPic .featuredItemsPic_addToCart {
+    position: absolute;
+    background-color:  rgba(58, 56, 56, 0.83);
+    height: 280px; width: 261px;
+    display: none;
+    
+}
+.featuredItems .featuredItemsPics .featuredItemsPic .featuredItemsPic_addToCart .addToCart_tablet {
+    margin-top: 100px;
+    margin-left: 70px;
+    width: 125px; line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    outline: 1px solid white;  
+}
+.featuredItems .featuredItemsPics .featuredItemsPic .featuredItemsPic_addToCart .addToCart_tablet a {
+    text-decoration: none;
+    color:  #ffffff;
+}
+
+.featuredItems .featuredItemsPics .featuredItemsPic .featuredItemsPic_shadow {
+    position: absolute;
+    top: 280px;
+    height: 85px; width: 261px;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+    background: white;
+    z-index: -1;
+    display: none;
+}
+
+.featuredItems .featuredItemsPics .featuredItemsPic:hover .featuredItemsPic_addToCart, .featuredItems .featuredItemsPics .featuredItemsPic:hover .featuredItemsPic_shadow {
+    display: block;
+}
+
+/* /FEATURED_ITEMS_PICS_HOVER */
+
+.featuredItems h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 54px;
+    height: 50px; width: 210px;
+    background: #f16d7f;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.featuredItems h3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* /FEATURED_ITEMS */
+
+/* BOTTOM_BANNER */
+
+.bottomBanner {
+    height: 740px;
+    position: relative;
+    margin-top: 115px;
+    box-sizing: border-box;
+}
+
+.bottomBanner .bottomBannerHeader {
+    position: absolute;
+    top: 145px; left: 40px;
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.bottomBanner .bottomBannerHeader span {
+    color: #f16d7f;
+    letter-spacing: 1.5px;
+}
+.bottomBanner .bottomBannerHeader p {
+    font-size: 32px;
+    letter-spacing: 0.9px;
+}
+
+.bottomBanner .merits .delivery .truckPic {
+    height: 40px; width: 47px;
+    background: url(../imgs/mainPage_BottomBanner_truckPic.png) no-repeat;
+}
+.bottomBanner .merits .sales .salesPic {
+    height: 40px; width: 47px;
+    background: url(../imgs/mainPage_bottomBanner_salesPic.png) no-repeat;
+}
+.bottomBanner .merits .qualityAssurance .qualityAssurancePic {
+    height: 40px; width: 47px;
+    background: url(../imgs/mainPage_bottomBanner_crownPic.png);
+}
+
+.bottomBanner .merits {
+    position: absolute;
+    top: 30px; right: 40px;
+    width: 340px;
+}
+.bottomBanner .merits .merit {
+    display: flex;
+    flex-direction: row;
+}
+.bottomBanner .merits .merit:not(:first-child) {
+    margin-top: 30px;
+}
+
+ .bottomBanner .merits .bottomBanner_meritsText {
+    margin-left: 30px;
+    width: 220px;
+} 
+.bottomBanner .merits .bottomBanner_meritsText p {
+    margin-top: 15px;
+    width: 220px;
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+}
+.bottomBanner .merits .bottomBanner_meritsText h4 {
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* /BOTTOM_BANNER */
+
+/* FEEDBACK */
+
+.feedbackWrap {
+    width: 1600px;
+    background: url(../imgs/mainPage_feedbackBackgroundPic.png);
+    height: 440px;
+}
+.feedback {
+    display: flex;
+}
+/* COMMENTS_SECTION */
+
+.feedback .commentsSection {
+    width: 560px; height: 440px;
+    box-sizing: border-box;
+    padding-top: 110px;
+    margin-left: 0;
+    border-right: 1px solid white;
+    
+}
+
+.feedback .commentsSection .commentatorPic1 {
+    height: 83px; width: 83px;
+    background: url(../imgs/mainPage_feedback_commentatorPic1.png);
+    float: left;
+}
+
+.feedback .commentsSection .commentText {
+    margin-left: 115px;
+    margin-top: 15px;
+    width: 386px;
+    height: 68px;
+    color: #222224;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+}
+.feedback .commentsSection .commentatorData {
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin-left: 114px;
+    margin-top: 20px;
+}
+.feedback .commentsSection .commentatorData span {
+    color: #222224;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.feedback .commentsSection .commentSwitch {
+    margin-left: 115px;
+    margin-top: 30px;
+}
+.feedback .commentsSection .commentSwitch img:not(:first-child) {
+    margin-left: 10px;
+}
+
+/* /COMMENTS_SECTION */
+
+/* SUBSCRIPTION_SECTION */
+
+.subscription_section {
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.subscription_section .subscriptionSection_header {
+    height: 3px;
+}
+.subscription_section .subscriptionSection_header p{
+    width: 277px;
+    color: #222224;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+.subscription_section .subscriptionSection_header span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.subscription_section .subscribe input, .subscription_section .subscribe button {
+    border: none;
+    height: inherit;
+}
+.subscription_section .subscribe {
+    margin-top: 35px;
+    position: relative;
+    right: 50px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #e1e1e1;
+    overflow: hidden;
+}
+.subscription_section .subscribe input {
+    padding-left: 30px;
+    width: 260px;
+    opacity: 0.67;
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    outline: none;
+}
+.subscription_section .subscribe button {
+    padding-left: 0px;
+    width: 104px;
+    height: 46px;
+    border-radius: 0 23px 23px 0;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+
+/* /SUBSCRIPTION_SECTION */
+
+/* /FEEDBACK */
+
+/* FOOTER */
+
+.footer {
+    width: 1600px;
+}
+
+/* FOOTER_INSIDE */
+
+.footerInside {
+    margin-top: 110px;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+.footer .logo {
+    line-height: 51px;
+    width: 165px;
+    background: url(../imgs/logo.png) no-repeat;
+    color: #222222;
+    font-size: 27px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    padding-left: 72px;
+}
+.footer .footerSection .logo span {
+    color: #f16d7f;
+    font-weight: 400;
+}
+
+.footer .footerSection p {
+    width: 427px;
+    color: #898989;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    margin-top: 30px;
+}
+
+.footer .footerSection:not(:first-child) {
+    margin-left: 70px;
+}
+.footer .section3, .footer .section4{
+    padding-left: 35px;
+}
+
+.footer .footerSection .footerSection_header {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.45px;
+    margin-top: 12px;
+}
+.footer .footerSection .footerSection_header a {
+    text-decoration: none;
+    color: #f16d7f;
+}
+
+.footer .footerSection ul li{
+    list-style: none;
+    margin-top: 30px;
+}
+.footer .footerSection ul li:first-child {
+    margin-top: 52px;
+}
+.footer .footerSection ul li a {
+    text-decoration: none;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+/* /FOOTER_INSIDE */
+
+/* FOOTER_BOTTOM */
+
+.footerBottomWrap {
+    height: 79px; width: 1600px;
+    background-color: #e6e6e6;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.footer .footerBottom span {
+    width: 260px;
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.footer .footerBottom .socialLogos {
+    display: flex;
+    float: right;
+    margin-right: 21px;
+}
+.footer .footerBottom .socialLogo {
+    height: 32px; width: 32px;
+    margin-left: 8px;
+}
+
+.footer .footerBottom .socialLogo {
+    color: #000000;
+    font-size: 32px;
+}
+.footer .footerBottom .socialLogo:hover {
+    color: red;
+}
+
+/* Картинок у меня таких нет, реализовал при помощи FontAwesome */
+
+/* /FOOTER_BOTTOM */
+
+/* /FOOTER */
