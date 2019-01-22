@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1164px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
+    height: 0; width: 0;
+}
+
+/* HEADER */
+
+header {
+    height: 100px;
+    border-bottom: 1px solid #ececec;
+}
+
+.headerInside {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerInside .logo {
+    line-height: 51px;
+    width: 165px;
+    background: url(../imgs/logo.png) no-repeat;
+    color: #222222;
+    font-size: 27px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    padding-left: 72px;
+}
+.headerInside .logo span {
+    color: #f16d7f;
+    font-weight: 400;
+}
+
+/* SEARCH */
+
+.headerInside .searchWrap {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden; /*чтобы не торчали уголки блоков с скруглёнными границами*/
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+
+.headerInside .searchWrap .searchBrowse {
+    height: inherit;
+    width: 90px;
+    box-sizing: border-box;
+    padding: 11px;
+    padding-right: 0;
+    font-size: 14px;
+    font-weight: 300;
+    border-right: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+}
+.headerInside .searchWrap .searchBrowse a {
+    color: #222222;
+}
+.headerInside .searchWrap input {
+    height: inherit;
+    box-sizing: border-box;
+    padding-left: 16px;
+    border: none;
+    width: 315px;
+}
+.headerInside .searchWrap button {
+    height: inherit;
+    box-sizing: border-box;
+    background: inherit;
+    width: 36px;
+    border: none;
+    border-left: 1px solid #e6e6e6;
+}
+
+/* /SEARCH */
+
+.headerInside .cart {
+    height: 29px;
+    width: 37px;
+    background: url(../imgs/cart.png) no-repeat;
+    margin-left: 350px;
+}
+
+.headerInside .myAccount {
+    margin-left: 26px;
+    background-color:  #f16d7f;
+    width: 130px;
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    border-radius: 3px;
+}
+
+/* /HEADER */
+
+/* TOP_NAVIGATION */
+
+.topNav {
+    height: 50px;
+    padding-left: 240px;
+    padding-top: 20px; 
+    box-sizing: border-box; /*Чтобы padding работал, как мне нужно*/
+    display: flex;
+}
+
+.topNav a {
+    display: block;
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700; 
+    margin-right: 50px;
+}
+
+/* /TOP_NAVIGATION */
