@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +9,6 @@
 a {
     text-decoration: none;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
 .container {
     width: 1164px;
@@ -127,12 +127,9 @@ header {
     display: block;
     text-decoration: none;
     color: #222222;
-    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-size: 14px;
     font-weight: 700; 
     margin-right: 50px;
-    color: #222222;
-    font-size: 14px; /* Приближение из-за подстановки шрифтов */
-    font-weight: 700;
 }
 
 /* /TOP_NAVIGATION */
@@ -441,7 +438,6 @@ header {
 .feedback .commentsSection .commentatorData {
     color: #f16d7f;
     font-size: 16px;
-    font-weight: 700;
     font-weight: 700;
     letter-spacing: 0.4px;
     margin-left: 114px;
