@@ -15,6 +15,10 @@ a {
     width: 1164px;
     margin: 0 auto;
 }
+.wrap {
+    width: 1600px;
+    margin: 0 auto;
+}
 
 .clearfix {
     clear: both;
@@ -173,3 +177,17 @@ header {
     font-weight: 700;
 }
 
+/* /NEW_ARRIVALS */
+
+/* PRODUCTS */
+
+.products hgroup {
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+    float: right;
+}
+
+.products h4 {
+    float: left
+}
