@@ -499,6 +499,10 @@ header {
     letter-spacing: 0.35px;
 }
 
+.subscribe input {
+    background-color: #e1e1e1;
+}
+
 /* /SUBSCRIPTION_SECTION */
 
 /* /FEEDBACK */
