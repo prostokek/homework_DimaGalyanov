@@ -96,7 +96,7 @@ header {
 
 /* /SEARCH */
 
-.headerInside .cart {
+.headerInside .cartLogo {
     height: 29px;
     width: 37px;
     background: url(../imgs/cart.png) no-repeat;
@@ -257,4 +257,116 @@ header {
 .cart .products .details h5:last-child {
     color: gray;
     font-size: 15px;
+}
+
+/* /CART_DETAILS */
+
+/* CART_MIDDLE_BUTTONS */
+
+.cart_middleButtons a{
+    margin-top: 45px;
+    display: block;
+    width: 235px;
+    line-height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+.cart_middleButtons a:first-child {
+    float: left;
+}
+.cart_middleButtons a:last-child {
+    float: right;
+}
+
+/* /CART_MIDDLE_BUTTONS */
+
+/* CART_BOTTOM_SECTIONS*/
+
+.cart_bottomSections {
+    margin-top: 60px;
+    display: flex;
+}
+.cart_bottomSections section:not(:last-child) {
+    margin-right: 35px;
+}
+
+.cart_bottomSections legend {
+    margin-bottom: 25px;
+}
+.cart_bottomSections form input{
+    display: block;
+    margin-top: 25px;
+    width: 355px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #b1b1b1;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.cart_bottomSections form button {
+    width: 100px;
+    height: 35px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.cart_bottomSections .total_sumWrap {
+    width: 360px;
+    height: 214px;
+    background-color: #f5f3f3;
+    display: flex;
+    justify-content: center;
+}
+.cart_bottomSections .total_sum {
+    width: 275px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.cart_bottomSections .total_sum h3 {
+    color: #4a4a4a;
+    font-size: 11px;
+    font-weight: 400;
+}
+.cart_bottomSections .total_sum h4 {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+}
+.cart_bottomSections .total_sum h4 span {
+    color: #f16d7f;
+}
+.cart_bottomSections .total_sum h4 {
+    margin-top: 15px;
+}
+
+.cart_bottomSections .total_sum .horizontal_line {
+    margin-top: 20px;
+    width: 275px;
+    height: 1px;
+    background-color: #e2e2e2;
+}
+
+.cart_bottomSections .total_sum a {
+    width: 273px;
+    line-height: 50px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
 }
