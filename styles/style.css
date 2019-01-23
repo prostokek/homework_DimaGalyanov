@@ -405,7 +405,8 @@ header {
 
 .feedbackWrap {
     width: 1600px;
-    background: url(../imgs/mainPage_feedbackBackgroundPic.png);
+    background: url(../imgs/mainPage_feedbackBackgroundPic.png) #ccc;
+    background-blend-mode: overlay;
     height: 440px;
 }
 .feedback {
