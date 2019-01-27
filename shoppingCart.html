@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/shoppingCart_style.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <header class='wrap'>
+        <div class="headerInside container">
+            <a href="#" style="text-decoration: none;">
+                <div class="logo">BRAN<span>D</span></div>
+            </a>
+
+            <form class="searchWrap">
+                <div class="searchBrowse"><a href="#">Browse <i class="fas fa-caret-down"></i></a></div>
+                <input placeholder='Search for Item...' type="text">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+            <a href="">
+                <div class="cartLogo"></div>
+            </a>
+            <button class="myAccount">My Account <i class="fas fa-caret-down"></i></button>
+        </div>
+    </header>
+    <div class="wrap">
+        <nav class="topNav container">
+            <a href="#">HOME</a>
+            <a href="#">MAN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">ACCOSERIESE</a>
+            <a href="#">FEATURED</a>
+            <a href="#">HOT DEALS</a>
+        </nav>
+    </div>
+    <div class="newArrivalsWrap container">
+        <div class="newArrivals container">
+            <h1>NEW ARRIVALS</h1>
+            <hgroup>
+                <h2><a href="#">HOME</a></h2>/<h2><a href="#">MEN</a></h2>/<h2 class='active'><a href="#">NEW ARRIVALS</a></h2>
+            </hgroup>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="cart container">
+            <h4>PRODUCT DETAILS</h4>
+            <hgroup>
+                <h3>UNITY PRICE</h3>
+                <h3>QUANTITY</h3>
+                <h3>SHIPPING</h3>
+                <h3>SUBTOTAL</h3>
+                <h3>ACTION</h3>
+            </hgroup>
+            <div class="clearfix"></div>
+            <hr>
+            <div class='products'>
+                <section class="product">
+                    <div class='productPic'>
+                        <img src="imgs/shoppingCartPage_productPic1.jpg" alt="">
+                        <div>
+                            <h6>MANGO PEOPLE T-SHIRT</h6>
+                            <p><b>Color:</b> Red<br><b>Size:</b> XLL</p>
+                        </div>
+                    </div>
+                    <hgroup class="details">
+                        <h5>$150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+                        <h5>2</h5>
+                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FREE</h5>
+                        <h5>&nbsp;&nbsp;$300</h5>
+                        <h5><i class="fas fa-times-circle"></i>&nbsp;&nbsp;&nbsp;</h5>
+                    </hgroup>
+                </section>
+                <hr>
+                <section class="product">
+                    <div class='productPic'>
+                        <img src="imgs/shoppingCartPage_productPic2.png" alt="">
+                        <div>
+                            <h6>MANGO PEOPLE T-SHIRT</h6>
+                            <p><b>Color:</b> Red<br><b>Size:</b> XLL</p>
+                        </div>
+                    </div>
+                    <hgroup class="details">
+                        <h5>$150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+                        <h5>2</h5>
+                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FREE</h5>
+                        <h5>&nbsp;&nbsp;$300</h5>
+                        <h5><i class="fas fa-times-circle"></i>&nbsp;&nbsp;&nbsp;</h5>
+                    </hgroup>
+                </section>
+                <hr>
+                <section class="product">
+                    <div class='productPic'>
+                        <img src="imgs/shoppingCartPage_productPic3.jpg" alt="">
+                        <div>
+                            <h6>MANGO PEOPLE T-SHIRT</h6>
+                            <p><b>Color:</b> Red<br><b>Size:</b> XLL</p>
+                        </div>
+                    </div>
+                    <hgroup class="details">
+                        <h5>$150&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+                        <h5>2</h5>
+                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FREE</h5>
+                        <h5>&nbsp;&nbsp;$300</h5>
+                        <h5><i class="fas fa-times-circle"></i>&nbsp;&nbsp;&nbsp;</h5>
+                    </hgroup>
+                </section>
+                <hr>
+                <div class="cart_middleButtons">
+                    <a href="#">CLEAR SHOPPING CART</a>
+                    <a href="#">CONTINUE SHOPPING</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="cart_bottomSections">
+                <section>
+                    <form>
+                        <legend>SHIPPING ADDRESS</legend>
+                        <input id="shippingAddress_country" list="shippingAddress_country_list" placeholder='Bangladesh'>
+                        <datalist id="shippingAddress_country_list">
+                            <option label="Россия" value="Russia">
+                            <option label="Бангладеш" value="Bangladesh">
+                            <option label="Италия" value="Italy">
+                        </datalist>
+                        <input id='shippingAddress_State' list='shippingAddress_state_list' placeholder="State">
+                        <datalist id='shippingAddress_state_list'>
+                            <option label='Москва' value="Moscow"></option>
+                            <option label='Дакка' value="Dhaka"></option>
+                            <option label='Рим' value="Rome"></option>
+                        </datalist>
+                        <input id='shippingAddress_postcode' list='shippingAddress_postcode_list' placeholder="Postcode / Zip">
+                        <datalist id='shippingAddress_postcode_list'>
+                            <option value="198652"></option>
+                            <option value="292652"></option>
+                            <option value="398552"></option>
+                        </datalist>
+                        <button>GET A QUOTE </button>
+                    </form>
+                </section>
+                <section>
+                    <form>
+                        <legend>COUPON DISCOUNT</legend>
+                        <label for="coupon">Enter your coupon code if you have one</label>
+                        <input type="text" placeholder="Coupon">
+                        <button>APPLY COUPON</button>
+                    </form>
+                </section>
+                <section class='total_sumWrap'>
+                    <div class="total_sum">
+                        <h3>SUB TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$900</h3>
+                        <h4>GRAND TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$900</span></h4>
+                        <div class='horizontal_line'></div>
+                        <a href="#">PROCEED TO CHECKOUT</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="feedbackWrap container">
+        <div class="feedback container">
+            <div class="commentsSection">
+                <div class="commentatorPic1"></div>
+                <p class='commentText'>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <h1 class='commentatorData'>Bin Burhan<br><span>Dhaka, Bd</span></h1>
+                <div class='commentSwitch'>
+                    <a href="#"><img src="imgs/mainPage_feedback_switchPic.png" alt="switchPic"> <img src="imgs/mainPage_feedback_switchPic(active).png" alt="switchPic(active)"> <img src="imgs/mainPage_feedback_switchPic.png" alt="switchPic"></a>
+                </div>
+            </div>
+            <div class="subscription_section">
+                <text class='subscriptionSection_header'>
+                    <p>SUBSCRIBE</p><span>FOR OUR NEWSLETTER AND PROMOTION</span>
+                </text>
+                <form class='subscribe'>
+                    <input type="text" placeholder="Enter Your Email"><button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer container">
+        <div class="footerInside container">
+            <div class="footerSection">
+                <a href="#" style="text-decoration: none;">
+                    <div class="logo">BRAN<span>D</span></div>
+                </a>
+                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br><br>Efficiently plagiarize 24/365 action items and focused infomediaries.Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+            </div>
+
+            <div class="footerSection">
+                <div class="footerSection_header"><a href="#">COMPANY</a></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footerSection section3">
+                <div class="footerSection_header"><a href="#">INFORMATION</a></div>
+                <ul>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">How to Sell</a></li>
+                    <li><a href="#">Promotion</a></li>
+                </ul>
+            </div>
+
+            <div class="footerSection section4">
+                <div class="footerSection_header"><a href="#">SHOP CATEGORY</a></div>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Child</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Browse All</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottomWrap container">
+            <div class="footerBottom container">
+                <span>&copy; 2017 Brand All Rights Reserved.</span>
+                <div class="socialLogos">
+                    <a href="#">
+                        <div class="socialLogo facebookLogo"><i class="fab fa-facebook"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="socialLogo twitterLogo"><i class="fab fa-twitter-square"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="socialLogo linkedInLogo"><i class="fab fa-linkedin"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="socialLogo pinterestLogo"><i class="fab fa-pinterest-square"></i></div>
+                    </a>
+                    <a href="#">
+                        <div class="socialLogo googlePlusLogo"><i class="fab fa-google-plus-square"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
