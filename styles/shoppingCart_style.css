@@ -149,12 +149,17 @@ header {
 
 .topNav {
     height: 50px;
-    padding-left: 240px;
-    padding-top: 20px; 
-    box-sizing: border-box; /*Чтобы padding работал, как мне нужно*/
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+@media (max-width:700px) {
+    .topNav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+}
 .topNav a {
     display: block;
     text-decoration: none;
@@ -164,9 +169,15 @@ header {
     margin-right: 30px;
     padding: 0 10px;
 }
-
+@media (max-width:700px) {
+    .topNav a {
+        margin: 0;
+        padding-top: 5px;
+    }
+}
 .topNav a:hover {
     border-bottom: 3px solid #ef5b70;
+    color: #f16d7f;
 }
 
 /* /TOP_NAVIGATION */
@@ -180,7 +191,7 @@ header {
 }
 @media (max-width: 1164px) {
     .newArrivalsWrap {
-        width: 1164px;
+        width: auto;
     }
 }
 
@@ -190,7 +201,12 @@ header {
     height: inherit; 
     align-items: center;
 }
-
+@media (max-width: 520px) {
+    .newArrivals {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 .newArrivals h1 {
     color: #f16d7f;
     font-size: 24px;
@@ -205,6 +221,11 @@ header {
 }
 
 .newArrivals .active {
+    color: #f16d7f;
+    font-weight: 700;
+}
+
+.newArrivals h2:hover, .newArrivals h1:hover {
     color: #f16d7f;
     font-weight: 700;
 }
