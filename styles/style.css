@@ -8,17 +8,27 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .container {
     width: 1164px;
     margin: 0 auto;
 }
+@media (max-width: 1164px) {
+    .container {
+        width: auto;
+    }
+}
 .wrap {
     width: 1600px;
     margin: 0 auto;
 }
-
+@media (max-width: 1164px) {
+    .wrap {
+        width: auto;
+    }
+}
 .clearfix {
     clear: both;
     height: 0; width: 0;
@@ -30,12 +40,23 @@ header {
     height: 100px;
     border-bottom: 1px solid #ececec;
 }
+@media (max-width: 720px) {
+    header {
+        height: auto;
+    }
+}
 
 .headerInside {
     height: inherit;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+@media (max-width: 720px) {
+    .headerInside {
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .headerInside .logo {
@@ -46,6 +67,11 @@ header {
     font-size: 27px; /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     padding-left: 72px;
+}
+@media (max-width:1164px) {
+    header .logo {
+        padding-bottom: 15px;
+    }
 }
 .headerInside .logo span {
     color: #f16d7f;
@@ -82,11 +108,11 @@ header {
     box-sizing: border-box;
     padding-left: 16px;
     border: none;
-    width: 315px;
+    
 }
 .headerInside .searchWrap button {
     height: inherit;
-    box-sizing: border-box;
+    
     background: inherit;
     width: 36px;
     border: none;
@@ -95,24 +121,26 @@ header {
 
 /* /SEARCH */
 
-.headerInside .cart {
-    height: 29px;
-    width: 37px;
-    background: url(../imgs/cart.png) no-repeat;
-    margin-left: 350px;
+.headerInside .cartLogo {
+    margin-left: auto;
+    margin-right: 25px;
+    
 }
+/*@media (max-width:1164px) {
+    .headerInside .cartLogo {
+        flex-shrink: 1;
+    }
+}*/
 
 .headerInside .myAccount {
-    margin-left: 26px;
     background-color:  #f16d7f;
-    width: 130px;
-    line-height: 38px;
-    text-align: center;
+    padding: 15px;
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
     border: none;
     border-radius: 3px;
+    
 }
 
 /* /HEADER */
