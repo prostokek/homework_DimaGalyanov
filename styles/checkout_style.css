@@ -251,30 +251,37 @@ main {
     padding-top: 90px;
 }
 
+main .shippingAddress_Flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 main h1 {
     color: #222222;
     font-size: 16px;
     font-weight: 700;
 }
 
+/* TO_REGISTRATION */
+
+main .to_registration {
+    margin-left: 35px;
+}
 main .to_registration h2 {
     color: #222222;
     font-size: 13px;
     font-weight: 400;
     margin-top: 40px;
-    margin-left: 35px;
 }
 main .to_registration h3 {
     color: #b3b2b2;
     font-size: 13px;
     font-weight: 400;
     margin-top: 15px;
-    margin-left: 35px;
     margin-bottom: 25px;
 }
 main .to_registration span {
     line-height: 35px;
-    margin-left: 35px;
 }
 
 /* КАК СТИЛИЗОВАТЬ INPUT RADIO НЕ ЗНАЮ (///)*/
@@ -286,7 +293,6 @@ main .to_registration p {
     font-weight: 400;
     line-height: 20px;
     height: 70px;
-    margin-left: 35px;
 }
 main .to_registration button {
     width: 180px;
@@ -296,5 +302,63 @@ main .to_registration button {
     color: #4a4a4a;
     font-size: 14px;
     font-weight: 700;
+}
+
+/* /TO_REGISTRATION */
+
+/* LOGIN */
+
+main .login {
     margin-left: 35px;
 }
+main .login h2 {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+main .login h3 {
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom:33px;
+}
+main .login p {
+    display: inline;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+main .login .red{
+    color: #ff0d0d;
+    font-size: 13px;
+    font-weight: 400;
+}
+main .login input {
+    width: 390px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin: 15px 0;
+}
+main .login button {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 27px;
+}
+main .login .forgot {
+    display: inline-block;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+/* /LOGIN */
