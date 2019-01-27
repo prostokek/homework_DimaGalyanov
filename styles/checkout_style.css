@@ -66,11 +66,14 @@ header {
     color: #222222;
     font-size: 27px; /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
+    box-sizing: border-box;
     padding-left: 72px;
+    margin-right: 50px;
 }
-@media (max-width:1164px) {
-    header .logo {
+@media (max-width:720px) {
+    .headerInside .logo {
         padding-bottom: 15px;
+        margin-right: 0;
     }
 }
 .headerInside .logo span {
@@ -121,16 +124,23 @@ header {
 
 /* /SEARCH */
 
-.headerInside .cartLogo {
+.headerInside .buttons {
     margin-left: auto;
+    display: flex;
+}
+@media (max-width:720px) {
+    .headerInside .buttons {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+.headerInside .cartLogo {
+    /*margin-left: auto;*/
     margin-right: 25px;
+    align-self: center;
     
 }
-/*@media (max-width:1164px) {
-    .headerInside .cartLogo {
-        flex-shrink: 1;
-    }
-}*/
+
 
 .headerInside .myAccount {
     background-color:  #f16d7f;
@@ -181,3 +191,110 @@ header {
 }
 
 /* /TOP_NAVIGATION */
+
+/* NEW_ARRIVALS */
+
+.newArrivalsWrap {
+    background-color: #f8f3f4;
+    width: 1600px;
+    height: 150px;
+}
+@media (max-width: 1164px) {
+    .newArrivalsWrap {
+        width: auto;
+    }
+}
+
+.newArrivals {
+    display: flex;
+    justify-content: space-between;
+    height: inherit; 
+    align-items: center;
+}
+@media (max-width: 520px) {
+    .newArrivals {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.newArrivals h1 {
+    color: #f16d7f;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.newArrivals h2 {
+    display: inline-block;
+    font-size: 14px;
+    color: #636363;
+    font-weight: 300;
+}
+
+.newArrivals .active {
+    color: #f16d7f;
+    font-weight: 700;
+}
+
+.newArrivals h2:hover, .newArrivals h1:hover {
+    color: #f16d7f;
+    font-weight: 700;
+}
+
+/* /NEW_ARRIVALS */
+
+/* CHECKOUT-MAIN */
+
+main {
+    height: 1020px;
+}
+.checkout {
+    padding-top: 90px;
+}
+
+main h1 {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+main .to_registration h2 {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-left: 35px;
+}
+main .to_registration h3 {
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+}
+main .to_registration span {
+    line-height: 35px;
+    margin-left: 35px;
+}
+
+/* КАК СТИЛИЗОВАТЬ INPUT RADIO НЕ ЗНАЮ (///)*/
+
+main .to_registration p {
+    height: 12px;
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    height: 70px;
+    margin-left: 35px;
+}
+main .to_registration button {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 35px;
+}
