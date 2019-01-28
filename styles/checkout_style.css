@@ -40,7 +40,7 @@ header {
     height: 100px;
     border-bottom: 1px solid #ececec;
 }
-@media (max-width: 720px) {
+@media (max-width: 730px) {
     header {
         height: auto;
     }
@@ -52,7 +52,7 @@ header {
     flex-direction: row;
     align-items: center;
 }
-@media (max-width: 720px) {
+@media (max-width: 730px) {
     .headerInside {
         flex-direction: column;
         height: auto;
@@ -70,7 +70,7 @@ header {
     padding-left: 72px;
     margin-right: 50px;
 }
-@media (max-width:720px) {
+@media (max-width:730px) {
     .headerInside .logo {
         padding-bottom: 15px;
         margin-right: 0;
@@ -128,7 +128,7 @@ header {
     margin-left: auto;
     display: flex;
 }
-@media (max-width:720px) {
+@media (max-width:730px) {
     .headerInside .buttons {
         margin-top: 15px;
         margin-left: 0;
@@ -163,7 +163,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-@media (max-width:700px) {
+@media (max-width:730px) {
     .topNav {
         flex-direction: column;
         height: auto;
@@ -179,7 +179,7 @@ header {
     margin-right: 30px;
     padding: 0 10px;
 }
-@media (max-width:700px) {
+@media (max-width:730px) {
     .topNav a {
         margin: 0;
         padding-top: 5px;
@@ -254,6 +254,7 @@ main {
 main .shippingAddress_Flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 main h1 {
@@ -266,6 +267,12 @@ main h1 {
 
 main .to_registration {
     margin-left: 35px;
+}
+@media (max-width:730px) {
+    main .to_registration {
+        padding-bottom: 40px;
+        border-bottom: 1px solid gray;
+    }
 }
 main .to_registration h2 {
     color: #222222;
