@@ -639,7 +639,11 @@ header {
     letter-spacing: 0.35px;
     margin-top: 30px;
 }
-
+@media (max-width: 500px) {
+    .footer .footerSection p {
+        width: auto;
+    }
+}
 .footer .footerSection .footerSection_header {
     font-size: 18px;
     font-weight: 700;
