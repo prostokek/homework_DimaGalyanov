@@ -40,7 +40,7 @@ header {
     height: 100px;
     border-bottom: 1px solid #ececec;
 }
-@media (max-width: 720px) {
+@media (max-width: 730px) {
     header {
         height: auto;
     }
@@ -52,7 +52,7 @@ header {
     flex-direction: row;
     align-items: center;
 }
-@media (max-width: 720px) {
+@media (max-width: 730px) {
     .headerInside {
         flex-direction: column;
         height: auto;
@@ -66,11 +66,14 @@ header {
     color: #222222;
     font-size: 27px; /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
+    box-sizing: border-box;
     padding-left: 72px;
+    margin-right: 50px;
 }
-@media (max-width:1164px) {
-    header .logo {
+@media (max-width: 730px) {
+    .headerInside .logo {
         padding-bottom: 15px;
+        margin-right: 0;
     }
 }
 .headerInside .logo span {
@@ -121,16 +124,23 @@ header {
 
 /* /SEARCH */
 
-.headerInside .cartLogo {
+.headerInside .buttons {
     margin-left: auto;
+    display: flex;
+}
+@media (max-width: 730px) {
+    .headerInside .buttons {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+.headerInside .cartLogo {
+    /*margin-left: auto;*/
     margin-right: 25px;
+    align-self: center;
     
 }
-/*@media (max-width:1164px) {
-    .headerInside .cartLogo {
-        flex-shrink: 1;
-    }
-}*/
+
 
 .headerInside .myAccount {
     background-color:  #f16d7f;
@@ -153,7 +163,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-@media (max-width:700px) {
+@media (max-width: 730px) {
     .topNav {
         flex-direction: column;
         height: auto;
@@ -169,7 +179,7 @@ header {
     margin-right: 30px;
     padding: 0 10px;
 }
-@media (max-width:700px) {
+@media (max-width: 730px) {
     .topNav a {
         margin: 0;
         padding-top: 5px;
