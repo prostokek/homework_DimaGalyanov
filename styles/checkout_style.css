@@ -402,7 +402,7 @@ main .header_filler:last-child {
     background-blend-mode: overlay;
     height: 440px;
 }
-@media (max-width: 1164px) {
+@media (max-width: 1103px) {
     .feedbackWrap {
         width: auto;
         height: 880px;
