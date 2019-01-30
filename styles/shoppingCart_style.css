@@ -40,7 +40,7 @@ header {
     height: 100px;
     border-bottom: 1px solid #ececec;
 }
-@media (max-width: 720px) {
+@media (max-width: 730px) {
     header {
         height: auto;
     }
@@ -52,7 +52,7 @@ header {
     flex-direction: row;
     align-items: center;
 }
-@media (max-width: 720px) {
+@media (max-width: 730px) {
     .headerInside {
         flex-direction: column;
         height: auto;
@@ -66,11 +66,14 @@ header {
     color: #222222;
     font-size: 27px; /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
+    box-sizing: border-box;
     padding-left: 72px;
+    margin-right: 50px;
 }
-@media (max-width:1164px) {
-    header .logo {
+@media (max-width: 730px) {
+    .headerInside .logo {
         padding-bottom: 15px;
+        margin-right: 0;
     }
 }
 .headerInside .logo span {
@@ -121,16 +124,23 @@ header {
 
 /* /SEARCH */
 
-.headerInside .cartLogo {
+.headerInside .buttons {
     margin-left: auto;
+    display: flex;
+}
+@media (max-width: 730px) {
+    .headerInside .buttons {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+.headerInside .cartLogo {
+    /*margin-left: auto;*/
     margin-right: 25px;
+    align-self: center;
     
 }
-/*@media (max-width:1164px) {
-    .headerInside .cartLogo {
-        flex-shrink: 1;
-    }
-}*/
+
 
 .headerInside .myAccount {
     background-color:  #f16d7f;
@@ -153,7 +163,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-@media (max-width:700px) {
+@media (max-width: 730px) {
     .topNav {
         flex-direction: column;
         height: auto;
@@ -169,7 +179,7 @@ header {
     margin-right: 30px;
     padding: 0 10px;
 }
-@media (max-width:700px) {
+@media (max-width: 730px) {
     .topNav a {
         margin: 0;
         padding-top: 5px;
@@ -437,8 +447,20 @@ header {
     background-blend-mode: overlay;
     height: 440px;
 }
+@media (max-width: 1103px) {
+    .feedbackWrap {
+        width: auto;
+        height: 880px;
+    }
+}
 .feedback {
     display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 1104px) {
+    .feedback {
+        height: auto;
+    }
 }
 /* COMMENTS_SECTION */
 
@@ -448,9 +470,12 @@ header {
     padding-top: 110px;
     margin-left: 0;
     border-right: 1px solid white;
-    
 }
-
+@media (max-width: 1104px) {
+    .feedback .commentsSection {
+        border: none;
+    }
+}
 .feedback .commentsSection .commentatorPic1 {
     height: 83px; width: 83px;
     background: url(../imgs/mainPage_feedback_commentatorPic1.png);
@@ -467,6 +492,12 @@ header {
     font-style: italic;
     line-height: 26px;
     letter-spacing: 0.4px;
+}
+@media (max-width: 501px) {
+    .feedback .commentsSection .commentText {
+        height: auto;
+        width: auto;
+    }
 }
 .feedback .commentsSection .commentatorData {
     color: #f16d7f;
@@ -517,15 +548,20 @@ header {
     margin-top: 50px;
 }
 
-.subscription_section .subscribe input, .subscription_section .subscribe button {
+.subscription_section .subscribe input[type="text"], .subscription_section .subscribe button {
     border: none;
-    height: inherit;
+    height: 46px;
+}
+@media (max-width: 544px) {
+    .subscription_section .subscribe input[type="text"] {
+        width: inherit;
+    }
 }
 .subscription_section .subscribe {
     margin-top: 35px;
     position: relative;
     right: 50px;
-    height: 46px;
+    height: auto;
     border-radius: 23px;
     background-color: #e1e1e1;
     overflow: hidden;
@@ -565,13 +601,19 @@ header {
 .footer {
     width: 1600px;
 }
-
+@media (max-width: 1164px) {
+    .footer {
+        width: auto;
+    }
+}
 /* FOOTER_INSIDE */
 
 .footerInside {
     margin-top: 110px;
     margin-bottom: 100px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footer .logo {
@@ -597,14 +639,11 @@ header {
     letter-spacing: 0.35px;
     margin-top: 30px;
 }
-
-.footer .footerSection:not(:first-child) {
-    margin-left: 70px;
+@media (max-width: 500px) {
+    .footer .footerSection p {
+        width: auto;
+    }
 }
-.footer .section3, .footer .section4{
-    padding-left: 35px;
-}
-
 .footer .footerSection .footerSection_header {
     font-size: 18px;
     font-weight: 700;
@@ -630,6 +669,9 @@ header {
     font-weight: 400;
     letter-spacing: 0.4px;
 }
+.footer .footerSection {
+    margin-left: 15px;
+}
 
 /* /FOOTER_INSIDE */
 
@@ -640,6 +682,11 @@ header {
     background-color: #e6e6e6;
     padding-top: 25px;
     box-sizing: border-box;
+}
+@media (max-width: 1164px) {
+    .footerBottomWrap {
+        width: auto;
+    }
 }
 
 .footer .footerBottom span {
