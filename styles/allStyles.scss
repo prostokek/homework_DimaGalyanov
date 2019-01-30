@@ -128,8 +128,8 @@ header {
 .headerInside .buttons {
     margin-left: auto;
     display: flex;
-    
-    @media (max-width: 730px){
+
+    @media (max-width: 730px) {
         margin-top: 15px;
         margin-left: 0;
     }
@@ -139,7 +139,6 @@ header {
     /*margin-left: auto;*/
     margin-right: 25px;
     align-self: center;
-
 }
 
 .headerInside .myAccount {
@@ -150,7 +149,6 @@ header {
     font-weight: 400;
     border: none;
     border-radius: 3px;
-
 }
 
 /* /HEADER */
@@ -162,36 +160,32 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-@media (max-width: 730px) {
-    .topNav {
+    @media (max-width: 730px) {
         flex-direction: column;
         height: auto;
         padding: 15px 0;
     }
-}
 
-.topNav a {
-    display: block;
-    text-decoration: none;
-    color: #222222;
-    font-size: 14px;
-    font-weight: 700;
-    margin-right: 30px;
-    padding: 0 10px;
-}
+    a {
+        display: block;
+        text-decoration: none;
+        color: #222222;
+        font-size: 14px;
+        font-weight: 700;
+        margin-right: 30px;
+        padding: 0 10px;
 
-@media (max-width: 730px) {
-    .topNav a {
-        margin: 0;
-        padding-top: 5px;
+        @media (max-width: 730px) {
+            margin: 0;
+            padding-top: 5px;
+        }
+
+        &:hover {
+            border-bottom: 3px solid #ef5b70;
+            color: #f16d7f;
+        }
     }
-}
-
-.topNav a:hover {
-    border-bottom: 3px solid #ef5b70;
-    color: #f16d7f;
 }
 
 /* /TOP_NAVIGATION */
