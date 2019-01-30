@@ -192,7 +192,163 @@ header {
 
 /* /TOP_NAVIGATION */
 
+/* FEEDBACK */
 
+.feedbackWrap {
+    margin-top: 80px;
+    width: 1600px;
+    background: url(../imgs/mainPage_feedbackBackgroundPic.png) #ccc;
+    background-blend-mode: overlay;
+    height: 440px;
+}
+@media (max-width: 1103px) {
+    .feedbackWrap {
+        width: auto;
+        height: 880px;
+    }
+}
+.feedback {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 1104px) {
+    .feedback {
+        height: auto;
+    }
+}
+/* COMMENTS_SECTION */
+
+.feedback .commentsSection {
+    width: 560px; height: 440px;
+    box-sizing: border-box;
+    padding-top: 110px;
+    margin-left: 0;
+    border-right: 1px solid white;
+}
+@media (max-width: 1104px) {
+    .feedback .commentsSection {
+        border: none;
+    }
+}
+.feedback .commentsSection .commentatorPic1 {
+    height: 83px; width: 83px;
+    background: url(../imgs/mainPage_feedback_commentatorPic1.png);
+    float: left;
+}
+
+.feedback .commentsSection .commentText {
+    margin-left: 115px;
+    margin-top: 15px;
+    width: 386px;
+    height: 68px;
+    color: #222224;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+}
+@media (max-width: 501px) {
+    .feedback .commentsSection .commentText {
+        height: auto;
+        width: auto;
+    }
+}
+.feedback .commentsSection .commentatorData {
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin-left: 114px;
+    margin-top: 20px;
+}
+.feedback .commentsSection .commentatorData span {
+    color: #222224;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.feedback .commentsSection .commentSwitch {
+    margin-left: 115px;
+    margin-top: 30px;
+}
+.feedback .commentsSection .commentSwitch img:not(:first-child) {
+    margin-left: 10px;
+}
+
+/* /COMMENTS_SECTION */
+
+/* SUBSCRIPTION_SECTION */
+
+.subscription_section {
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.subscription_section .subscriptionSection_header {
+    height: 3px;
+}
+.subscription_section .subscriptionSection_header p{
+    width: 277px;
+    color: #222224;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+.subscription_section .subscriptionSection_header span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.subscription_section .subscribe input[type="text"], .subscription_section .subscribe button {
+    border: none;
+    height: 46px;
+}
+@media (max-width: 544px) {
+    .subscription_section .subscribe input[type="text"] {
+        width: inherit;
+    }
+}
+.subscription_section .subscribe {
+    margin-top: 35px;
+    position: relative;
+    right: 50px;
+    height: auto;
+    border-radius: 23px;
+    background-color: #e1e1e1;
+    overflow: hidden;
+}
+.subscription_section .subscribe input {
+    padding-left: 30px;
+    width: 260px;
+    opacity: 0.67;
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    outline: none;
+}
+.subscription_section .subscribe button {
+    padding-left: 0px;
+    width: 104px;
+    height: 46px;
+    border-radius: 0 23px 23px 0;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+
+.subscribe input {
+    background-color: #e1e1e1;
+}
+
+/* /SUBSCRIPTION_SECTION */
+
+/* /FEEDBACK */
 
 
 
