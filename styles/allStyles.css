@@ -155,7 +155,6 @@ header .headerInside .logo span {
   justify-content: center;
   align-items: center;
 }
-
 @media (max-width: 730px) {
   .topNav {
     flex-direction: column;
@@ -172,7 +171,6 @@ header .headerInside .logo span {
   margin-right: 30px;
   padding: 0 10px;
 }
-
 @media (max-width: 730px) {
   .topNav a {
     margin: 0;
