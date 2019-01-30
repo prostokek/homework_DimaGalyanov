@@ -262,12 +262,16 @@ main .shippingAddress_Flex {
     flex-wrap: wrap;
 }
 
-main h1 {
+.checkout summary {
     color: #222222;
     font-size: 16px;
     font-weight: 700;
+    line-height: 70px;
+    border-top: 1px solid #e8e8e8;
 }
-
+.shippingAddress summary:first-child {
+    border: none;
+}
 /* TO_REGISTRATION */
 
 main .to_registration {
@@ -375,23 +379,6 @@ main .login .forgot {
 }
 
 /* /LOGIN */
-
-/* OTHER SECTIONS */
-
-main .header_filler {
-    line-height: 70px;
-    border-top: 1px solid #e8e8e8;
-}
-main .header_filler h2 {
-    color: #222222;
-    font-size: 16px;
-    font-weight: 700;
-}
-main .header_filler:last-child {
-    border-bottom: 1px solid #e8e8e8;
-}
-
-/* /OTHER SECTIONS */
 
 /* FEEDBACK */
 
