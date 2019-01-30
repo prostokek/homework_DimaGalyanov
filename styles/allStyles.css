@@ -715,14 +715,9 @@ header .headerInside .logo span {
 /* CHECKOUT_MAIN */
 /* CHECKOUT-MAIN */
 .checkoutWrap {
-  height: 1020px;
+  height: auto;
 }
 
-@media (max-width: 730px) {
-  .checkoutWrap {
-    height: auto;
-  }
-}
 .checkout {
   padding-top: 90px;
 }
@@ -874,7 +869,6 @@ header .headerInside .logo span {
 
 /* /LOGIN */
 /* /CHECKOUT-MAIN */
-/* /CHECKOUT_MAIN*/
 /* FEEDBACK */
 .feedbackWrap {
   margin-top: 80px;
@@ -883,23 +877,22 @@ header .headerInside .logo span {
   background-blend-mode: overlay;
   height: 440px;
 }
-
 @media (max-width: 1103px) {
   .feedbackWrap {
     width: auto;
     height: 880px;
   }
 }
-.feedback {
+.feedbackWrap .feedback {
   display: flex;
   flex-wrap: wrap;
 }
-
 @media (max-width: 1104px) {
-  .feedback {
+  .feedbackWrap .feedback {
     height: auto;
   }
 }
+
 /* COMMENTS_SECTION */
 .feedback .commentsSection {
   width: 560px;
@@ -909,7 +902,6 @@ header .headerInside .logo span {
   margin-left: 0;
   border-right: 1px solid white;
 }
-
 @media (max-width: 1104px) {
   .feedback .commentsSection {
     border: none;
@@ -921,7 +913,6 @@ header .headerInside .logo span {
   background: url(../imgs/mainPage_feedback_commentatorPic1.png);
   float: left;
 }
-
 .feedback .commentsSection .commentText {
   margin-left: 115px;
   margin-top: 15px;
@@ -933,7 +924,6 @@ header .headerInside .logo span {
   line-height: 26px;
   letter-spacing: 0.4px;
 }
-
 @media (max-width: 501px) {
   .feedback .commentsSection .commentText {
     height: auto;
@@ -948,19 +938,16 @@ header .headerInside .logo span {
   margin-left: 114px;
   margin-top: 20px;
 }
-
 .feedback .commentsSection .commentatorData span {
   color: #222224;
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0.3px;
 }
-
 .feedback .commentsSection .commentSwitch {
   margin-left: 115px;
   margin-top: 30px;
 }
-
 .feedback .commentsSection .commentSwitch img:not(:first-child) {
   margin-left: 10px;
 }
@@ -970,12 +957,10 @@ header .headerInside .logo span {
 .subscription_section {
   margin-top: 150px;
   margin-left: 150px;
+  /*display: flex;*/
 }
 
-.subscription_section .subscriptionSection_header {
-  height: 3px;
-}
-
+/* ХОЧУ ИЗМЕНИТЬ ЭТУ СЕКЦИЮ, НО ПРИ ИСПОЛЬЗОВАНИИ display:flex на .subscription_section ЭЛЕМЕНТЫ ПРИНИМАЮТ НЕСКОЛЬКО СТРАННОЕ ПОЛОЖЕНИЕ */
 .subscription_section .subscriptionSection_header p {
   width: 277px;
   color: #222224;
@@ -984,23 +969,41 @@ header .headerInside .logo span {
   letter-spacing: 0.6px;
   text-align: center;
 }
-
 .subscription_section .subscriptionSection_header span {
   font-size: 14px;
   font-weight: 400;
   margin-top: 50px;
 }
 
-.subscription_section .subscribe input[type="text"],
-.subscription_section .subscribe button {
+.subscription_section .subscribe input[type="text"] {
   border: none;
   height: 46px;
+  padding-left: 30px;
+  width: 260px;
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  outline: none;
+  background-color: #e1e1e1;
 }
-
 @media (max-width: 544px) {
   .subscription_section .subscribe input[type="text"] {
     width: inherit;
   }
+}
+.subscription_section .subscribe button {
+  border: none;
+  height: 46px;
+  padding-left: 0px;
+  width: 104px;
+  border-radius: 0 23px 23px 0;
+  background-color: #f16d7f;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
 }
 .subscription_section .subscribe {
   margin-top: 35px;
@@ -1010,33 +1013,6 @@ header .headerInside .logo span {
   border-radius: 23px;
   background-color: #e1e1e1;
   overflow: hidden;
-}
-
-.subscription_section .subscribe input {
-  padding-left: 30px;
-  width: 260px;
-  opacity: 0.67;
-  color: #222224;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.35px;
-  outline: none;
-}
-
-.subscription_section .subscribe button {
-  padding-left: 0px;
-  width: 104px;
-  height: 46px;
-  border-radius: 0 23px 23px 0;
-  background-color: #f16d7f;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.35px;
-}
-
-.subscribe input {
-  background-color: #e1e1e1;
 }
 
 /* /SUBSCRIPTION_SECTION */
