@@ -189,45 +189,35 @@ header .headerInside .logo span {
   width: 1600px;
   height: 150px;
 }
-
 @media (max-width: 1164px) {
   .newArrivalsWrap {
     width: auto;
   }
 }
-.newArrivals {
+.newArrivalsWrap .newArrivals {
   display: flex;
   justify-content: space-between;
   height: inherit;
   align-items: center;
 }
-
 @media (max-width: 520px) {
-  .newArrivals {
+  .newArrivalsWrap .newArrivals {
     flex-direction: column;
     justify-content: center;
   }
 }
-.newArrivals h1 {
+.newArrivalsWrap .newArrivals h1 {
   color: #f16d7f;
   font-size: 24px;
   font-weight: 400;
 }
-
-.newArrivals h2 {
+.newArrivalsWrap .newArrivals h2 {
   display: inline-block;
   font-size: 14px;
   color: #636363;
   font-weight: 300;
 }
-
-.newArrivals .active {
-  color: #f16d7f;
-  font-weight: 700;
-}
-
-.newArrivals h2:hover,
-.newArrivals h1:hover {
+.newArrivalsWrap .newArrivals h2:hover {
   color: #f16d7f;
   font-weight: 700;
 }
