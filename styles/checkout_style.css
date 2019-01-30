@@ -299,6 +299,19 @@ main .to_registration h3 {
 main .to_registration span {
     line-height: 35px;
 }
+.checkout input[name="checkout_or_reg" ] {
+    display: none;
+}
+.checkout label[for="guest"],
+.checkout label[for="reg"]
+{
+    background: url(../imgs/input_radio_empty.png) no-repeat 3px 3px;
+    padding-left: 20px;
+}
+.checkout #guest:checked + label,
+.checkout #reg:checked + label {
+    background: url(../imgs/input_radio_checked.png) no-repeat 3px 3px;
+}
 
 /* КАК СТИЛИЗОВАТЬ INPUT RADIO НЕ ЗНАЮ (///)*/
 
