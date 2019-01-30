@@ -1090,10 +1090,8 @@ header {
 
 .footer {
     width: 1600px;
-}
 
-@media (max-width: 1164px) {
-    .footer {
+    @media (max-width: 1164px) {
         width: auto;
     }
 }
@@ -1106,118 +1104,113 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
 
-.footer .logo {
-    line-height: 51px;
-    width: 165px;
-    background: url(../imgs/logo.png) no-repeat;
-    color: #222222;
-    font-size: 27px;
-    /* Приближение из-за подстановки шрифтов */
-    font-weight: 300;
-    padding-left: 72px;
-}
+    .logo {
+        line-height: 51px;
+        width: 165px;
+        background: url(../imgs/logo.png) no-repeat;
+        color: #222222;
+        font-size: 27px;
+        /* Приближение из-за подстановки шрифтов */
+        font-weight: 300;
+        padding-left: 72px;
 
-.footer .footerSection .logo span {
-    color: #f16d7f;
-    font-weight: 400;
-}
-
-.footer .footerSection p {
-    width: 427px;
-    color: #898989;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.35px;
-    margin-top: 30px;
-}
-
-@media (max-width: 500px) {
-    .footer .footerSection p {
-        width: auto;
+        span {
+            color: #f16d7f;
+            font-weight: 400;
+        }
     }
-}
 
-.footer .footerSection .footerSection_header {
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.45px;
-    margin-top: 12px;
-}
+    .footerSection {
+        margin-left: 15px;
 
-.footer .footerSection .footerSection_header a {
-    text-decoration: none;
-    color: #f16d7f;
-}
+        p {
+            width: 427px;
+            color: #898989;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.35px;
+            margin-top: 30px;
 
-.footer .footerSection ul li {
-    list-style: none;
-    margin-top: 30px;
-}
+            @media (max-width: 500px) {
+                width: auto;
+            }
+        }
 
-.footer .footerSection ul li:first-child {
-    margin-top: 52px;
-}
+        .footerSection_header {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.45px;
+            margin-top: 12px;
 
-.footer .footerSection ul li a {
-    text-decoration: none;
-    color: #898989;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-}
+            a {
+                text-decoration: none;
+                color: #f16d7f;
+            }
+        }
 
-.footer .footerSection {
-    margin-left: 15px;
+        ul li {
+            list-style: none;
+            margin-top: 30px;
+
+            &:first-child {
+                margin-top: 52px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #898989;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.4px;
+            }
+        }
+    }
 }
 
 /* /FOOTER_INSIDE */
 
 /* FOOTER_BOTTOM */
 
-.footerBottomWrap {
+.footer .footerBottomWrap {
     height: 79px;
     width: 1600px;
     background-color: #e6e6e6;
     padding-top: 25px;
     box-sizing: border-box;
-}
 
-@media (max-width: 1164px) {
-    .footerBottomWrap {
+    @media (max-width: 1164px) {
         width: auto;
     }
-}
 
-.footer .footerBottom span {
-    width: 260px;
-    color: #7a7a7a;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-}
+    .footerBottom {
+        span {
+            width: 260px;
+            color: #7a7a7a;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+        }
 
-.footer .footerBottom .socialLogos {
-    display: flex;
-    float: right;
-    margin-right: 21px;
-}
+        .socialLogos {
+            display: flex;
+            float: right;
+            margin-right: 21px;
+        }
 
-.footer .footerBottom .socialLogo {
-    height: 32px;
-    width: 32px;
-    margin-left: 8px;
-}
+        .socialLogo {
+            height: 32px;
+            width: 32px;
+            margin-left: 8px;
+            color: #000000;
+            font-size: 32px;
 
-.footer .footerBottom .socialLogo {
-    color: #000000;
-    font-size: 32px;
-}
-
-.footer .footerBottom .socialLogo:hover {
-    color: red;
+            &:hover {
+                color: red;
+            }
+        }
+    }
 }
 
 /* Картинок у меня таких нет, реализовал при помощи FontAwesome */
