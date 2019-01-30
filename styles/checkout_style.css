@@ -244,11 +244,11 @@ header {
 
 /* CHECKOUT-MAIN */
 
-main {
+.checkoutWrap {
     height: 1020px;
 }
 @media (max-width: 730px) {
-    main {
+    .checkoutWrap {
         height: auto;
     }
 }
@@ -256,7 +256,7 @@ main {
     padding-top: 90px;
 }
 
-main .shippingAddress_Flex {
+.checkoutWrap .shippingAddress_Flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -274,29 +274,29 @@ main .shippingAddress_Flex {
 }
 /* TO_REGISTRATION */
 
-main .to_registration {
+.checkoutWrap .to_registration {
     margin-left: 35px;
 }
 @media (max-width: 730px) {
-    main .to_registration {
+    .checkoutWrap .to_registration {
         padding-bottom: 40px;
         border-bottom: 1px solid gray;
     }
 }
-main .to_registration h2 {
+.checkoutWrap .to_registration h2 {
     color: #222222;
     font-size: 13px;
     font-weight: 400;
     margin-top: 40px;
 }
-main .to_registration h3 {
+.checkoutWrap .to_registration h3 {
     color: #b3b2b2;
     font-size: 13px;
     font-weight: 400;
     margin-top: 15px;
     margin-bottom: 25px;
 }
-main .to_registration span {
+.checkoutWrap .to_registration span {
     line-height: 35px;
 }
 .checkout input[name="checkout_or_reg" ] {
@@ -313,9 +313,7 @@ main .to_registration span {
     background: url(../imgs/input_radio_checked.png) no-repeat 3px 3px;
 }
 
-/* КАК СТИЛИЗОВАТЬ INPUT RADIO НЕ ЗНАЮ (///)*/
-
-main .to_registration p {
+.checkoutWrap .to_registration p {
     height: 12px;
     color: #b3b2b2;
     font-size: 13px;
@@ -323,7 +321,7 @@ main .to_registration p {
     line-height: 20px;
     height: 70px;
 }
-main .to_registration button {
+.checkoutWrap .to_registration button {
     width: 180px;
     height: 50px;
     border: 1px solid #eaeaea;
@@ -337,42 +335,42 @@ main .to_registration button {
 
 /* LOGIN */
 
-main .login {
+.checkoutWrap .login {
     margin-left: 35px;
 }
-main .login h2 {
+.checkoutWrap .login h2 {
     color: #222222;
     font-size: 13px;
     font-weight: 400;
     margin-top: 40px;
 }
-main .login h3 {
+.checkoutWrap .login h3 {
     color: #b3b2b2;
     font-size: 13px;
     font-weight: 400;
     margin-top: 15px;
     margin-bottom:33px;
 }
-main .login p {
+.checkoutWrap .login p {
     display: inline;
     color: #222222;
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 15px;
 }
-main .login .red{
+.checkoutWrap .login .red{
     color: #ff0d0d;
     font-size: 13px;
     font-weight: 400;
 }
-main .login input {
+.checkoutWrap .login input {
     width: 390px;
     height: 45px;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     margin: 15px 0;
 }
-main .login button {
+.checkoutWrap .login button {
     width: 180px;
     height: 50px;
     border: 1px solid #eaeaea;
@@ -382,7 +380,7 @@ main .login button {
     font-weight: 700;
     margin-top: 27px;
 }
-main .login .forgot {
+.checkoutWrap .login .forgot {
     display: inline-block;
     color: #222222;
     font-size: 14px;
@@ -392,6 +390,8 @@ main .login .forgot {
 }
 
 /* /LOGIN */
+
+/* CHECKOUT-MAIN */
 
 /* FEEDBACK */
 
