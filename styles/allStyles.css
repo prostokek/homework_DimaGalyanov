@@ -640,6 +640,10 @@ header .headerInside .logo span {
   font-weight: 300;
 }
 
+.cart_bottomSections form fieldset {
+  border: none;
+}
+
 .cart_bottomSections form button {
   width: 100px;
   height: 35px;
@@ -1008,6 +1012,9 @@ header .headerInside .logo span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.uMayLikeAlso div section {
+  margin: 0 10px;
 }
 .uMayLikeAlso div h2 {
   margin-top: 20px;
