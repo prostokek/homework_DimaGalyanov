@@ -1122,35 +1122,44 @@ header {
     width: 1600px;
     background: url(../imgs/mainPage_feedbackBackgroundPic.png) #ccc;
     background-blend-mode: overlay;
-    height: 440px;
 
-    @media (max-width: 1103px) {
+    @media (max-width: 1164px) {
         width: auto;
-        height: 880px;
+        height: auto;
     }
 
     .feedback {
         display: flex;
-        flex-wrap: wrap;
 
-        @media (max-width: 1104px) {
+        @media (max-width: 930px) {
             height: auto;
-        }
+            flex-direction: column;
+        } 
     }
 }
 
 /* COMMENTS_SECTION */
 
 .feedback .commentsSection {
-    width: 560px;
+    max-width: 560px;
     height: 440px;
     box-sizing: border-box;
-    padding-top: 110px;
     margin-left: 0;
     border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 1;
 
-    @media (max-width: 1104px) {
+    @media (max-width: 930px) {
         border: none;
+    }
+    
+    @media (max-width: 930px) {
+        height: 240px;
+        margin-top: 20px;
     }
 
     .commentatorPic1 {
@@ -1161,10 +1170,7 @@ header {
     }
 
     .commentText {
-        margin-left: 115px;
-        margin-top: 15px;
         width: 386px;
-        height: 68px;
         color: #222224;
         font-size: 16px;
         font-style: italic;
@@ -1182,8 +1188,6 @@ header {
         font-size: 16px;
         font-weight: 700;
         letter-spacing: 0.4px;
-        margin-left: 114px;
-        margin-top: 20px;
 
         span {
             color: #222224;
@@ -1194,9 +1198,6 @@ header {
     }
 
     .commentSwitch {
-        margin-left: 115px;
-        margin-top: 30px;
-
         img {
             &:not(:first-child) {
                 margin-left: 10px;
@@ -1210,27 +1211,31 @@ header {
 /* SUBSCRIPTION_SECTION */
 
 .subscription_section {
-    margin-top: 150px;
-    margin-left: 150px;
-    /*display: flex;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 1;
+    
+    @media (max-width: 930px) {
+        max-width: 560px;
+        height: 180px;
+    }
 }
 
-/* ХОЧУ ИЗМЕНИТЬ ЭТУ СЕКЦИЮ, НО ПРИ ИСПОЛЬЗОВАНИИ display:flex на .subscription_section ЭЛЕМЕНТЫ ПРИНИМАЮТ НЕСКОЛЬКО СТРАННОЕ ПОЛОЖЕНИЕ */
 
 .subscription_section .subscriptionSection_header {
     p {
-        width: 277px;
         color: #222224;
         font-weight: 400;
         font-size: 24px;
         letter-spacing: 0.6px;
-        text-align: center;
     }
 
     span {
         font-size: 14px;
         font-weight: 400;
-        margin-top: 50px;
     }
 }
 
@@ -1268,13 +1273,10 @@ header {
 
     .subscribe {
         margin-top: 35px;
-        position: relative;
-        right: 50px;
         height: auto;
         border-radius: 23px;
         background-color: #e1e1e1;
         overflow: hidden;
-
     }
 }
 
