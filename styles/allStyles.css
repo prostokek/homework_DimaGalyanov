@@ -786,7 +786,6 @@ header .headerInside .logo span {
 }
 
 .checkoutWrap .to_registration p {
-  height: 12px;
   color: #b3b2b2;
   font-size: 13px;
   font-weight: 400;
@@ -918,7 +917,7 @@ header .headerInside .logo span {
   color: #212121;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Lato - Black";
+  font-family: "Lato - Black", sans-serif;
   margin-bottom: 65px;
 }
 .singlePageOffer .singlePageOfferContent .text_info .description {
