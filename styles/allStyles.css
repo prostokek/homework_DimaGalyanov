@@ -879,6 +879,29 @@ header .headerInside .logo span {
   background: url(../imgs/SinglePage_Main_Background.png);
   height: 780px;
 }
+.singlePageBannerWrap .sliders {
+  height: inherit;
+  position: absolute;
+  width: inherit;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+@media (max-width: 1164px) {
+  .singlePageBannerWrap .sliders {
+    width: 100%;
+  }
+}
+.singlePageBannerWrap .sliders .sliderImg {
+  position: relative;
+  top: calc(50% - 47px /2);
+}
+.singlePageBannerWrap .sliders .sliderImg a:hover {
+  /*НА КАКИЕ КАРТИНКИ ОНИ ДОЛЖНЫ МЕНЯТЬСЯ ПРИ НАВЕДЕНИИ Я НЕ ЗНАЮ (В МАКЕТЕ ЭТОГО НЕ НАШЁЛ)*/
+}
+.singlePageBannerWrap .sliders img[alt="sliderPicRight"] {
+  top: 20px;
+}
 
 .singlePageBanner {
   background: url(../imgs/SinglePage_main_BGPic.png) no-repeat center center;
