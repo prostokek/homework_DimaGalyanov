@@ -1048,6 +1048,11 @@ header .headerInside .logo span {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 842px) {
+  .uMayLikeAlso div {
+    justify-content: space-around;
+  }
+}
 .uMayLikeAlso div section {
   margin: 0 10px;
 }

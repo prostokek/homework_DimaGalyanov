@@ -1118,6 +1118,9 @@ header {
         flex-wrap: wrap;
         justify-content: space-between;
         
+        @media (max-width: 842px) {
+            justify-content: space-around;
+        }
         section {
             margin: 0 10px;
         }
