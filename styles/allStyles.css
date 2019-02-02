@@ -845,6 +845,11 @@ header .headerInside .logo span {
   background-color: #ffffff;
   margin: 15px 0;
 }
+@media (max-width: 500px) {
+  .checkoutWrap .login input {
+    width: 260px;
+  }
+}
 
 .checkoutWrap .login button {
   width: 180px;
