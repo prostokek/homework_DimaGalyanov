@@ -937,15 +937,19 @@ header {
 /* SINGLE_PAGE_OFFER */
 
 .singlePageOffer {
-    height: 730px;
+    /*height: 730px;*/
+    max-width: 640px;
+    min-height: 730px;
     margin-top: -75px;
     background-color: white;
     border: 1px solid #eaeaea;
     display: flex;
 
     .singlePageOfferContent {
-        height: 600px;
-        width: 540px;
+        min-height: 600px;
+        /*height: 600px;*/
+        /*width: 540px;*/
+        max-width: 540px;
         align-self: center;
         display: flex;
         flex-direction: column;
@@ -1007,10 +1011,17 @@ header {
             }
 
             .horizontalLine {
-                width: 642px;
+                width: 600px;
                 height: 1px;
                 border: 1px solid #eaeaea;
                 background-color: #ef5b70;
+                
+                @media (max-width: 600px) {
+                    width: 320px;
+                }
+                @media (max-width: 320px) {
+                    width: 180px;
+                }
             }
         }
 
@@ -1021,10 +1032,21 @@ header {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 30px;
+                
+                @media (max-width: 600px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
 
                 div {
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
+                    
+                    @media (max-width: 600px) {
+                            width: 80%;
+                        }
 
                     label {
                         color: #2f2f2f;
@@ -1041,6 +1063,10 @@ header {
                         color: #bcbcbc;
                         font-size: 13px;
                         font-weight: 400;
+                        
+                        @media (max-width: 600px) {
+                            width: 80%;
+                        }
                     }
                 }
 
@@ -1051,7 +1077,7 @@ header {
 
             .addToCartButton {
                 display: block;
-                width: 538px;
+                width: 540px;
                 line-height: 55px;
                 border: 1px solid #ef5b70;
                 background-color: #ffffff;
@@ -1060,6 +1086,10 @@ header {
                 color: #ef5b70;
                 font-size: 16px;
                 font-weight: 700;
+                
+                @media (max-width: 600px) {
+                    width: auto;
+                }
             }
         }
     }

@@ -883,15 +883,19 @@ header .headerInside .logo span {
 /* /SINGLE_PAGE_BANNER */
 /* SINGLE_PAGE_OFFER */
 .singlePageOffer {
-  height: 730px;
+  /*height: 730px;*/
+  max-width: 640px;
+  min-height: 730px;
   margin-top: -75px;
   background-color: white;
   border: 1px solid #eaeaea;
   display: flex;
 }
 .singlePageOffer .singlePageOfferContent {
-  height: 600px;
-  width: 540px;
+  min-height: 600px;
+  /*height: 600px;*/
+  /*width: 540px;*/
+  max-width: 540px;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -944,10 +948,20 @@ header .headerInside .logo span {
   margin: 45px 0;
 }
 .singlePageOffer .singlePageOfferContent .text_info .horizontalLine {
-  width: 642px;
+  width: 600px;
   height: 1px;
   border: 1px solid #eaeaea;
   background-color: #ef5b70;
+}
+@media (max-width: 600px) {
+  .singlePageOffer .singlePageOfferContent .text_info .horizontalLine {
+    width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .singlePageOffer .singlePageOfferContent .text_info .horizontalLine {
+    width: 180px;
+  }
 }
 .singlePageOffer .singlePageOfferContent .addToCart {
   margin-top: 60px;
@@ -960,9 +974,21 @@ header .headerInside .logo span {
       background: url(../imgs/) no-repeat 10px;
   }*/
 }
+@media (max-width: 600px) {
+  .singlePageOffer .singlePageOfferContent .addToCart .inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .singlePageOffer .singlePageOfferContent .addToCart .inputs div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .singlePageOffer .singlePageOfferContent .addToCart .inputs div {
+    width: 80%;
+  }
 }
 .singlePageOffer .singlePageOfferContent .addToCart .inputs div label {
   color: #2f2f2f;
@@ -979,9 +1005,14 @@ header .headerInside .logo span {
   font-size: 13px;
   font-weight: 400;
 }
+@media (max-width: 600px) {
+  .singlePageOffer .singlePageOfferContent .addToCart .inputs div input {
+    width: 80%;
+  }
+}
 .singlePageOffer .singlePageOfferContent .addToCart .addToCartButton {
   display: block;
-  width: 538px;
+  width: 540px;
   line-height: 55px;
   border: 1px solid #ef5b70;
   background-color: #ffffff;
@@ -990,6 +1021,11 @@ header .headerInside .logo span {
   color: #ef5b70;
   font-size: 16px;
   font-weight: 700;
+}
+@media (max-width: 600px) {
+  .singlePageOffer .singlePageOfferContent .addToCart .addToCartButton {
+    width: auto;
+  }
 }
 
 /* /SINGLE_PAGE_OFFER */
