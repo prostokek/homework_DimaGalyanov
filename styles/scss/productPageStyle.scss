@@ -1,3 +1,263 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
 @import "../../packages/bootstrap-4.2.1/scss/bootstrap.scss"; 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrap {
+    width: 1600px;
+    margin: 0 auto;
+
+    @media (max-width: 1164px) {
+        width: auto;
+    }
+}
+
+/* HEADER */
+
+header {
+    height: 100px;
+    border-bottom: 1px solid #ececec;
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
+
+    .headerInside {
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            height: auto;
+        }
+
+        .logo {
+            line-height: 51px;
+            width: 165px;
+            background: url(../imgs/logo.png) no-repeat;
+            color: #222222;
+            font-size: 27px;
+            font-weight: 300;
+            box-sizing: border-box;
+            padding-left: 72px;
+            margin-right: 50px;
+
+            @media (max-width: 768px) {
+                padding-bottom: 15px;
+                margin-right: 0;
+            }
+
+            span {
+                color: #f16d7f;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+/* SEARCH */
+
+.headerInside .searchWrap {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+    /*чтобы не торчали уголки блоков с скруглёнными границами*/
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+
+    .searchBrowse {
+        height: inherit;
+        width: 90px;
+        box-sizing: border-box;
+        padding: 11px;
+        padding-right: 0;
+        font-size: 14px;
+        font-weight: 300;
+        border-right: 1px solid #e6e6e6;
+        background-color: #f9f9f9;
+
+        a {
+            color: #222222;
+        }
+    }
+
+    input {
+        height: inherit;
+        box-sizing: border-box;
+        padding-left: 16px;
+        border: none;
+    }
+
+    button {
+        height: inherit;
+        background: inherit;
+        /* BOOTSTRAP СВОИМ BOX-SIZING'ОМ МНЕ КНОПКУ УВЕЛИЧИВАЕТ, НИ ОДНО ИЗ ЗНАЧЕНИЙ, ПРЕДЛОЖЕННЫХ БРАУЗЕРОМ, ПРОБЛЕМУ НЕ РЕШАЕТ. ЧТО ДЕЛАТЬ, ЧТОБЫ КНОПКА ОСТАВАЛАСЬ ТАКОЙ, КАКОЙ ДОЛЖНА БЫТЬ (ПРИ ОТКЛЮЧЕНИИ ЭТОГО СВОЙСТВА ПРИ ПРОСМОТРЕ КОДА ВСЁ СТАНОВИТСЯ НА СВОИ МЕСТА)? */
+        width: 36px;
+        border: none;
+        border-left: 1px solid #e6e6e6;
+    }
+}
+
+/* /SEARCH */
+
+.headerInside .buttons {
+    margin-left: auto;
+    display: flex;
+
+    @media (max-width: 768px) {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+
+.headerInside .cartLogo {
+    /*margin-left: auto;*/
+    margin-right: 25px;
+    align-self: center;
+}
+
+.headerInside .myAccount {
+    background-color: #f16d7f;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    border-radius: 3px;
+}
+
+/* /HEADER */
+
+/* TOP_NAVIGATION */
+
+.topNav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: #222222;
+        font-size: 14px;
+        font-weight: 700;
+        margin-right: 30px;
+        padding: 0 10px;
+
+        @media (max-width: 768px) {
+            margin: 0;
+            padding-top: 5px;
+        }
+
+        &:hover {
+            border-bottom: 3px solid #ef5b70;
+            color: #f16d7f;
+        }
+    }
+}
+
+/* /TOP_NAVIGATION */
+
+/* NEW_ARRIVALS */
+
+.newArrivalsWrap {
+    background-color: #f8f3f4;
+    min-width: 1600px;
+    height: 150px;
+    align-self: center;
+
+    @media (max-width: 1164px) {
+        min-width: auto;
+    }
+
+    .newArrivals {
+        display: flex;
+        justify-content: space-between;
+        height: inherit;
+        align-items: center;
+
+        @media (max-width: 520px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            color: #f16d7f;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        h2 {
+            display: inline-block;
+            font-size: 14px;
+            color: #636363;
+            font-weight: 300;
+
+            &:hover {
+                color: #f16d7f;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/* /NEW_ARRIVALS */
+
+
+/* PRODUCT_PAGE_MAIN */
+
+
+/* LEFT_MENU */
+
+.leftMenu {
+    details {
+        margin: 10px 0;
+        summary {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 35px;
+            border-left: 5px solid #ef5b70;
+            border-bottom:1px solid #ebebeb;
+            &::-webkit-details-marker {
+                position: relative;
+                left: 90%;
+            }
+        }
+        .red {
+                color: #ef5b70;
+            }
+        
+        ul {
+            list-style: none;
+            padding-left: 20px;
+            margin-top: 10px;
+            
+            li {
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+/* /LEFT_MENU */
+
+/* PRODUCT_PAGE_MAIN_CONTENT */
+
