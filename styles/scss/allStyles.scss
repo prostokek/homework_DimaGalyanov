@@ -44,6 +44,9 @@ a {
     display: flex;
     flex-direction: column;
     color: #222222;
+    &:hover {
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    }
     
     .item_hover_addToCart {
         position: absolute;
@@ -1167,7 +1170,7 @@ header {
         }
 
         section {
-            padding: 15px;
+            margin: 15px;
         }
 
         h2 {
