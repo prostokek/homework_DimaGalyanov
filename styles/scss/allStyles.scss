@@ -324,55 +324,64 @@ header {
 
 /* FEATURED_ITEMS */
 
-.featuredItems h1 {
-    color: #222222;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 0;
-    text-align: center;
-    letter-spacing: 0.75px;
+.featuredItems {
+    h1 {
+        color: #222222;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-align: center;
+        letter-spacing: 0.75px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        color: #9f9f9f;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+        text-align: center;
+    }
+    
+    .featuredItemsPics {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        
+        .featuredItemsPic {
+            margin-right: 30px;
+            margin-top: 40px;
+            height: 370px;
+            display: flex;
+            flex-direction: column;
+            color: #222222;
+            
+            p {
+                font-size: 13px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-left: 15px;
+                
+                span {
+                    display: block;
+                    margin-top: 15px;
+                    color: #f16d7f;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
 }
 
-.featuredItems h2 {
-    margin-top: 10px;
-    color: #9f9f9f;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.35px;
-    text-align: center;
-}
-
-.featuredItems .featuredItemsPics {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.featuredItems .featuredItemsPics .featuredItemsPic {
-    margin-right: 30px;
-    margin-top: 40px;
-    height: 370px;
-    display: flex;
-    flex-direction: column;
-    color: #222222;
-
-}
-
-.featuredItems .featuredItemsPics .featuredItemsPic p {
-    font-size: 13px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-left: 15px;
-}
-
-.featuredItems .featuredItemsPics .featuredItemsPic p span {
+/*.featuredItems .featuredItemsPics .featuredItemsPic p span {
     display: block;
     margin-top: 15px;
     color: #f16d7f;
     font-size: 16px;
     font-weight: 700;
-}
+}*/
 
 /* FEATURED_ITEMS_PICS_HOVER */
 
@@ -380,14 +389,14 @@ header {
     .featuredItemsPics {
         .featuredItemsPic {
             position: relative;
-            
+
             .featuredItemsPic_addToCart {
                 position: absolute;
                 background-color: rgba(58, 56, 56, 0.83);
                 height: 280px;
                 width: 261px;
                 display: none;
-                
+
                 .addToCart_tablet {
                     margin-top: 100px;
                     margin-left: 70px;
@@ -398,13 +407,14 @@ header {
                     font-size: 13px;
                     font-weight: 700;
                     outline: 1px solid white;
-                    
+
                     a {
                         text-decoration: none;
-                        color: #ffffff;   
+                        color: #ffffff;
                     }
                 }
             }
+
             .featuredItemsPic_shadow {
                 position: absolute;
                 top: 280px;
@@ -435,7 +445,7 @@ header {
     background: #f16d7f;
     margin: 0 auto;
     text-align: center;
-    
+
     a {
         color: #ffffff;
     }
@@ -892,7 +902,7 @@ header {
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     margin: 15px 0;
-    
+
     @media (max-width: 500px) {
         width: 260px;
     }
@@ -930,7 +940,7 @@ header {
 .singlePageBannerWrap {
     background: url(../imgs/SinglePage_Main_Background.png);
     height: 780px;
-    
+
     .sliders {
         height: inherit;
         position: absolute;
@@ -938,18 +948,20 @@ header {
         display: flex;
         flex-shrink: 0;
         justify-content: space-between;
-        
+
         @media (max-width: 1164px) {
             width: 100%;
         }
+
         .sliderImg {
             position: relative;
             top: calc(50% - 47px /2);
-            
+
             a:hover {
                 /*НА КАКИЕ КАРТИНКИ ОНИ ДОЛЖНЫ МЕНЯТЬСЯ ПРИ НАВЕДЕНИИ Я НЕ ЗНАЮ (В МАКЕТЕ ЭТОГО НЕ НАШЁЛ)*/
             }
         }
+
         img[alt="sliderPicRight"] {
             top: 20px;
         }
@@ -959,8 +971,8 @@ header {
 .singlePageBanner {
     background: url(../imgs/SinglePage_main_BGPic.png) no-repeat center center;
     height: inherit;
-    
-    
+
+
 }
 
 
@@ -1048,10 +1060,11 @@ header {
                 height: 1px;
                 border: 1px solid #eaeaea;
                 background-color: #ef5b70;
-                
+
                 @media (max-width: 600px) {
                     width: 320px;
                 }
+
                 @media (max-width: 320px) {
                     width: 180px;
                 }
@@ -1065,21 +1078,21 @@ header {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 30px;
-                
+
                 @media (max-width: 600px) {
                     flex-direction: column;
                     align-items: center;
                 }
-                
+
 
                 div {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    
+
                     @media (max-width: 600px) {
-                            width: 80%;
-                        }
+                        width: 80%;
+                    }
 
                     label {
                         color: #2f2f2f;
@@ -1096,7 +1109,7 @@ header {
                         color: #bcbcbc;
                         font-size: 13px;
                         font-weight: 400;
-                        
+
                         @media (max-width: 600px) {
                             width: 80%;
                         }
@@ -1119,7 +1132,7 @@ header {
                 color: #ef5b70;
                 font-size: 16px;
                 font-weight: 700;
-                
+
                 @media (max-width: 600px) {
                     width: auto;
                 }
@@ -1150,14 +1163,15 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        
+
         @media (max-width: 842px) {
             justify-content: space-around;
         }
+
         section {
             padding: 15px;
         }
-        
+
         h2 {
             margin-top: 20px;
             color: #6f6e6e;
@@ -1165,6 +1179,7 @@ header {
             font-weight: 400;
             margin-left: 10px;
         }
+
         p {
             color: #f16d7f;
             font-size: 16px;
@@ -1200,7 +1215,7 @@ header {
         @media (max-width: 930px) {
             height: auto;
             flex-direction: column;
-        } 
+        }
     }
 }
 
@@ -1222,7 +1237,7 @@ header {
     @media (max-width: 930px) {
         border: none;
     }
-    
+
     @media (max-width: 930px) {
         height: 240px;
         margin-top: 20px;
@@ -1283,7 +1298,7 @@ header {
     align-items: center;
     text-align: center;
     flex: 1 1;
-    
+
     @media (max-width: 930px) {
         max-width: 560px;
         height: 180px;
