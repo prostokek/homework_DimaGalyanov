@@ -40,7 +40,13 @@ a {
 
 .item_hover_wrap {
     position: relative;
-
+    margin-right: 30px;
+    margin-top: 40px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    
     .item_hover_addToCart {
         position: absolute;
         background-color: rgba(58, 56, 56, 0.83);
@@ -1153,11 +1159,11 @@ header {
         margin-bottom: 70px;
     }
 
-    div {
+    .block {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
+        
         @media (max-width: 842px) {
             justify-content: space-around;
         }
