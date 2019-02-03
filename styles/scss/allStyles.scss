@@ -35,6 +35,59 @@ a {
     width: 0;
 }
 
+
+/* ITEMS_HOVER_ADDTOCART+SHADOW */
+
+.item_hover_wrap {
+    position: relative;
+
+    .item_hover_addToCart {
+        position: absolute;
+        background-color: rgba(58, 56, 56, 0.83);
+        height: 280px;
+        width: 261px;
+        display: none;
+
+        .addToCart_tablet {
+            margin-top: 100px;
+            margin-left: 70px;
+            width: 125px;
+            line-height: 40px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            outline: 1px solid white;
+
+            a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .item_hover_shadow {
+        position: absolute;
+        top: 280px;
+        height: 85px;
+        width: 261px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+        background: white;
+        z-index: -1;
+        display: none;
+    }
+}
+
+
+
+.item_hover_wrap:hover .item_hover_addToCart,
+.item_hover_wrap:hover .item_hover_shadow {
+    display: block;
+}
+
+/* /ITEMS_HOVER_ADDTOCART+SHADOW */
+
+
 /* HEADER */
 
 header {
@@ -342,12 +395,12 @@ header {
         letter-spacing: 0.35px;
         text-align: center;
     }
-    
+
     .featuredItemsPics {
         display: flex;
         flex-wrap: wrap;
         margin-top: 20px;
-        
+
         .featuredItemsPic {
             margin-right: 30px;
             margin-top: 40px;
@@ -355,14 +408,14 @@ header {
             display: flex;
             flex-direction: column;
             color: #222222;
-            
+
             p {
                 font-size: 13px;
                 font-weight: 400;
                 text-transform: uppercase;
                 margin-top: 20px;
                 margin-left: 15px;
-                
+
                 span {
                     display: block;
                     margin-top: 15px;
@@ -375,58 +428,7 @@ header {
     }
 }
 
-/* FEATURED_ITEMS_PICS_HOVER */
 
-.featuredItems {
-    .featuredItemsPics {
-        .featuredItemsPic {
-            position: relative;
-
-            .featuredItemsPic_addToCart {
-                position: absolute;
-                background-color: rgba(58, 56, 56, 0.83);
-                height: 280px;
-                width: 261px;
-                display: none;
-
-                .addToCart_tablet {
-                    margin-top: 100px;
-                    margin-left: 70px;
-                    width: 125px;
-                    line-height: 40px;
-                    text-align: center;
-                    color: #ffffff;
-                    font-size: 13px;
-                    font-weight: 700;
-                    outline: 1px solid white;
-
-                    a {
-                        text-decoration: none;
-                        color: #ffffff;
-                    }
-                }
-            }
-
-            .featuredItemsPic_shadow {
-                position: absolute;
-                top: 280px;
-                height: 85px;
-                width: 261px;
-                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
-                background: white;
-                z-index: -1;
-                display: none;
-            }
-        }
-    }
-}
-
-.featuredItems .featuredItemsPics .featuredItemsPic:hover .featuredItemsPic_addToCart,
-.featuredItems .featuredItemsPics .featuredItemsPic:hover .featuredItemsPic_shadow {
-    display: block;
-}
-
-/* /FEATURED_ITEMS_PICS_HOVER */
 
 .featuredItems h3 {
     font-size: 16px;
