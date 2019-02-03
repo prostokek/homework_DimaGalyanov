@@ -11536,12 +11536,17 @@ header .headerInside .logo span {
 /* /NEW_ARRIVALS */
 /* PRODUCT_PAGE_MAIN */
 /* LEFT_MENU */
-/* line 227, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+/* line 226, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.leftMenu {
+  margin-top: 60px;
+}
+
+/* line 228, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
 .leftMenu details {
   margin: 10px 0;
 }
 
-/* line 229, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+/* line 231, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
 .leftMenu details summary {
   font-size: 14px;
   font-weight: 700;
@@ -11550,25 +11555,25 @@ header .headerInside .logo span {
   border-bottom: 1px solid #ebebeb;
 }
 
-/* line 235, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+/* line 238, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
 .leftMenu details summary::-webkit-details-marker {
   position: relative;
   left: 90%;
 }
 
-/* line 240, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+/* line 244, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
 .leftMenu details .red {
   color: #ef5b70;
 }
 
-/* line 244, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+/* line 248, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
 .leftMenu details ul {
   list-style: none;
   padding-left: 20px;
   margin-top: 10px;
 }
 
-/* line 249, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+/* line 253, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
 .leftMenu details ul li {
   color: #6f6e6e;
   font-size: 14px;
@@ -11579,5 +11584,76 @@ header .headerInside .logo span {
 
 /* /LEFT_MENU */
 /* PRODUCT_PAGE_MAIN_CONTENT */
+/* line 268, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent {
+  margin-top: 60px;
+}
+
+/* line 271, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent section h4 {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+/* line 278, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent section p {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+/* line 283, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent section p i {
+  transform: rotate(52deg);
+  color: #dfdfdf;
+}
+
+/* line 289, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent section form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 293, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent section form p {
+  width: 60px;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* line 300, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent section form p input {
+  display: none;
+}
+
+/* line 304, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent section form p label {
+  background: url(../imgs/input_checkbox_empty.png) no-repeat 3px 3px;
+  padding-left: 20px;
+}
+
+/* line 309, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent section form p input:checked + label {
+  background: url(../imgs/input_checkbox_checked.png) no-repeat 3px 3px;
+}
+
+/* line 317, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent .price .priceRange_pic {
+  background: url(/imgs/priceRange.svg) no-repeat;
+  width: 262px;
+  height: 15px;
+}
+
+/* line 323, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.productPage_mainContent .price p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=../productPageStyle.map */

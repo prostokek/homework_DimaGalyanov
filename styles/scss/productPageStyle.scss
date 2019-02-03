@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
-@import "../../packages/bootstrap-4.2.1/scss/bootstrap.scss"; 
+@import "../../packages/bootstrap-4.2.1/scss/bootstrap.scss";
 
 a {
     text-decoration: none;
@@ -224,28 +224,32 @@ header {
 /* LEFT_MENU */
 
 .leftMenu {
+    margin-top: 60px;
     details {
         margin: 10px 0;
+
         summary {
             font-size: 14px;
             font-weight: 700;
             line-height: 35px;
             border-left: 5px solid #ef5b70;
-            border-bottom:1px solid #ebebeb;
+            border-bottom: 1px solid #ebebeb;
+
             &::-webkit-details-marker {
                 position: relative;
                 left: 90%;
             }
         }
+
         .red {
-                color: #ef5b70;
-            }
-        
+            color: #ef5b70;
+        }
+
         ul {
             list-style: none;
             padding-left: 20px;
             margin-top: 10px;
-            
+
             li {
                 color: #6f6e6e;
                 font-size: 14px;
@@ -262,18 +266,64 @@ header {
 /* PRODUCT_PAGE_MAIN_CONTENT */
 
 .productPage_mainContent {
+    margin-top: 60px;
     section {
         h4 {
-            
+            color: #6f6e6e;
+            font-size: 14px;
+            font-weight: 700;
+            margin: 20px 0;
         }
+
         p {
-            
-            span {
-                
+            color: #6f6e6e;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            i {
+                transform: rotate(52deg);
+                color: #dfdfdf;
             }
         }
-        input[type="checkbox"] {
-            
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+
+            p {
+                width: 60px;
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 400;
+                margin: 0;
+                
+                input {
+                    display: none;
+                }
+
+                label {
+                    background: url(../imgs/input_checkbox_empty.png) no-repeat 3px 3px;
+                    padding-left: 20px;
+                }
+
+                input:checked + label {
+                    background: url(../imgs/input_checkbox_checked.png) no-repeat 3px 3px;
+                }
+            }
+        }
+    }
+
+    .price {
+        .priceRange_pic {
+            background: url(/imgs/priceRange.svg) no-repeat;
+            width: 262px;
+            height: 15px;
+        }
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
         }
     }
 }
