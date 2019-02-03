@@ -56,6 +56,9 @@ a {
         display: none;
 
         .addToCart_tablet {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
             margin-top: 100px;
             margin-left: 70px;
             width: 125px;
@@ -65,11 +68,6 @@ a {
             font-size: 13px;
             font-weight: 700;
             outline: 1px solid white;
-
-            a {
-                text-decoration: none;
-                color: #ffffff;
-            }
         }
     }
 
