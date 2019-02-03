@@ -376,45 +376,47 @@ header {
 
 /* FEATURED_ITEMS_PICS_HOVER */
 
-.featuredItems .featuredItemsPics .featuredItemsPic {
-    position: relative;
-}
-
-.featuredItems .featuredItemsPics .featuredItemsPic .featuredItemsPic_addToCart {
-    position: absolute;
-    background-color: rgba(58, 56, 56, 0.83);
-    height: 280px;
-    width: 261px;
-    display: none;
-
-}
-
-.featuredItems .featuredItemsPics .featuredItemsPic .featuredItemsPic_addToCart .addToCart_tablet {
-    margin-top: 100px;
-    margin-left: 70px;
-    width: 125px;
-    line-height: 40px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 700;
-    outline: 1px solid white;
-}
-
-.featuredItems .featuredItemsPics .featuredItemsPic .featuredItemsPic_addToCart .addToCart_tablet a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.featuredItems .featuredItemsPics .featuredItemsPic .featuredItemsPic_shadow {
-    position: absolute;
-    top: 280px;
-    height: 85px;
-    width: 261px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
-    background: white;
-    z-index: -1;
-    display: none;
+.featuredItems {
+    .featuredItemsPics {
+        .featuredItemsPic {
+            position: relative;
+            
+            .featuredItemsPic_addToCart {
+                position: absolute;
+                background-color: rgba(58, 56, 56, 0.83);
+                height: 280px;
+                width: 261px;
+                display: none;
+                
+                .addToCart_tablet {
+                    margin-top: 100px;
+                    margin-left: 70px;
+                    width: 125px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #ffffff;
+                    font-size: 13px;
+                    font-weight: 700;
+                    outline: 1px solid white;
+                    
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;   
+                    }
+                }
+            }
+            .featuredItemsPic_shadow {
+                position: absolute;
+                top: 280px;
+                height: 85px;
+                width: 261px;
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+                background: white;
+                z-index: -1;
+                display: none;
+            }
+        }
+    }
 }
 
 .featuredItems .featuredItemsPics .featuredItemsPic:hover .featuredItemsPic_addToCart,
@@ -433,11 +435,10 @@ header {
     background: #f16d7f;
     margin: 0 auto;
     text-align: center;
-}
-
-.featuredItems h3 a {
-    text-decoration: none;
-    color: #ffffff;
+    
+    a {
+        color: #ffffff;
+    }
 }
 
 /* /FEATURED_ITEMS */
