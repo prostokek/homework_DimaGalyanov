@@ -5,6 +5,11 @@
 a {
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .wrap {
@@ -25,15 +30,24 @@ a {
     display: flex;
     flex-direction: column;
     color: #222222;
-    
+    width: 260px;
+
+    &:hover {
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    }
+
     .item_hover_addToCart {
         position: absolute;
         background-color: rgba(58, 56, 56, 0.83);
         height: 280px;
-        width: 261px;
+        width: 260px;
         display: none;
+        overflow: hidden;
 
         .addToCart_tablet {
+            text-decoration: none;
+            display: block;
+            color: white;
             margin-top: 100px;
             margin-left: 70px;
             width: 125px;
@@ -42,12 +56,8 @@ a {
             color: #ffffff;
             font-size: 13px;
             font-weight: 700;
-            outline: 1px solid white;
-
-            a {
-                text-decoration: none;
-                color: #ffffff;
-            }
+            border: 1px solid white;
+            border-radius: 3px;
         }
     }
 
@@ -422,37 +432,56 @@ header {
 .productPage_mainContent {
     .productPage_main_products {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
 
-        .featuredItemsPics {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 20px;
 
-            .item_hover_wrap {
-                margin-right: 30px;
-                margin-top: 40px;
-                height: 370px;
-                display: flex;
-                flex-direction: column;
-                color: #222222;
+        .product {
+            margin-top: 40px;
 
-                p {
-                    font-size: 13px;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                    margin-top: 20px;
-                    margin-left: 15px;
-
-                    span {
-                        display: block;
-                        margin-top: 15px;
-                        color: #f16d7f;
-                        font-size: 16px;
-                        font-weight: 700;
-                    }
+            .item_hover_addToCart {
+                .share {
+                    display: inline-block;
+                    width: 57px;
+                    line-height: 40px;
+                    border-radius: 3px;
+                    border: 1px solid #ffffff;
+                    color: white;
+                    text-align: center;
+                    margin-left: 70px;
+                    margin-top: 10px;
                 }
-            } 
+
+                .like {
+                    display: inline-block;
+                    width: 57px;
+                    line-height: 40px;
+                    border-radius: 3px;
+                    border: 1px solid #ffffff;
+                    color: white;
+                    text-align: center;
+                    margin-left: 10px;
+                }
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-left: 15px;
+
+                span {
+                    display: block;
+                    margin-top: 15px;
+                    color: #f16d7f;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
         }
+
 
         h3 {
             font-size: 16px;
@@ -470,8 +499,56 @@ header {
         }
 
         /* /PRODUCT_PAGE_MAIN_CONTENT_PRODUCTS*/
+
     }
+
+    /* PRODUCT_PAGE_MAIN_CONTENT_PAGINATION*/
+
+    .pagination {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+
+        .pages {
+            display: flex;
+            width: 260px;
+            height: 45px;
+            border-radius: 3px;
+            border: 1px solid #ebebeb;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                color: #c4c4c4;
+                font-size: 16px;
+                font-weight: bold;
+
+                &:hover {
+                    color: #ef5b70;
+                }
+            }
+        }
+
+        .viewAll_button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 44px;
+            border-radius: 3px;
+            border: 1px solid #ef5b70;
+            background-color: #ffffff;
+            color: #ef5b70;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        margin-bottom: 110px;
+    }
+
+    /* PRODUCT_PAGE_MAIN_CONTENT_PAGINATION*/
+
+    /* /PRODUCT_PAGE_MAIN_CONTENT_PAGINATION*/
 }
-
-
-
