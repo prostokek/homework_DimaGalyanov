@@ -9,6 +9,10 @@
 a {
     text-decoration: none;
     color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .container {
@@ -67,7 +71,8 @@ a {
             color: #ffffff;
             font-size: 13px;
             font-weight: 700;
-            outline: 1px solid white;
+            border: 1px solid white;
+            border-radius: 3px;
         }
     }
 
