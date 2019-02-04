@@ -612,5 +612,310 @@ header {
 }
 
 
-
 /* /PRODUCT_PAGE_BOTTOM_BANNER */
+
+/* /PRODUCT_PAGE_MAIN */
+
+
+
+
+/* FEEDBACK */
+
+.feedbackWrap {
+    margin-top: 80px;
+    width: 1600px;
+    background: url(../imgs/mainPage_feedbackBackgroundPic.png) #ccc;
+    background-blend-mode: overlay;
+
+    @media (max-width: 1164px) {
+        width: auto;
+        height: auto;
+    }
+
+    .feedback {
+        display: flex;
+
+        @media (max-width: 930px) {
+            height: auto;
+            flex-direction: column;
+        }
+    }
+}
+
+/* COMMENTS_SECTION */
+
+.feedback .commentsSection {
+    max-width: 560px;
+    height: 440px;
+    box-sizing: border-box;
+    margin-left: 0;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 1;
+
+    @media (max-width: 930px) {
+        border: none;
+    }
+
+    @media (max-width: 930px) {
+        height: 240px;
+        margin-top: 20px;
+    }
+
+    .commentatorPic1 {
+        height: 83px;
+        width: 83px;
+        background: url(../imgs/mainPage_feedback_commentatorPic1.png);
+        float: left;
+    }
+
+    .commentText {
+        width: 386px;
+        color: #222224;
+        font-size: 16px;
+        font-style: italic;
+        line-height: 26px;
+        letter-spacing: 0.4px;
+
+        @media (max-width: 501px) {
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .commentatorData {
+        color: #f16d7f;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+
+        span {
+            color: #222224;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+    }
+
+    .commentSwitch {
+        img {
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+/* /COMMENTS_SECTION */
+
+/* SUBSCRIPTION_SECTION */
+
+.subscription_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 1;
+
+    @media (max-width: 930px) {
+        max-width: 560px;
+        height: 180px;
+    }
+}
+
+
+.subscription_section .subscriptionSection_header {
+    p {
+        color: #222224;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 0.6px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.subscription_section {
+    .subscribe input[type="text"] {
+        border: none;
+        height: 46px;
+        padding-left: 30px;
+        width: 260px;
+        opacity: 0.67;
+        color: #222224;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+        outline: none;
+        background-color: #e1e1e1;
+
+        @media (max-width: 544px) {
+            width: inherit;
+        }
+    }
+
+    .subscribe button {
+        border: none;
+        height: 46px;
+        padding-left: 0px;
+        width: 104px;
+        border-radius: 0 23px 23px 0;
+        background-color: #f16d7f;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+    }
+
+    .subscribe {
+        margin-top: 35px;
+        height: auto;
+        border-radius: 23px;
+        background-color: #e1e1e1;
+        overflow: hidden;
+    }
+}
+
+/* /SUBSCRIPTION_SECTION */
+
+/* /FEEDBACK */
+
+/* FOOTER */
+
+.footer {
+    width: 1600px;
+
+    @media (max-width: 1164px) {
+        width: auto;
+    }
+}
+
+/* FOOTER_INSIDE */
+
+.footerInside {
+    margin-top: 110px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .logo {
+        line-height: 51px;
+        width: 165px;
+        background: url(../imgs/logo.png) no-repeat;
+        color: #222222;
+        font-size: 27px;
+        font-weight: 300;
+        padding-left: 72px;
+
+        span {
+            color: #f16d7f;
+            font-weight: 400;
+        }
+    }
+
+    .footerSection {
+        margin-left: 15px;
+
+        p {
+            width: 427px;
+            color: #898989;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.35px;
+            margin-top: 30px;
+
+            @media (max-width: 500px) {
+                width: auto;
+            }
+        }
+
+        .footerSection_header {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.45px;
+            margin-top: 12px;
+
+            a {
+                text-decoration: none;
+                color: #f16d7f;
+            }
+        }
+
+        ul li {
+            list-style: none;
+            margin-top: 30px;
+
+            &:first-child {
+                margin-top: 52px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #898989;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.4px;
+            }
+        }
+    }
+}
+
+/* /FOOTER_INSIDE */
+
+/* FOOTER_BOTTOM */
+
+.footer .footerBottomWrap {
+    height: 79px;
+    width: 1600px;
+    background-color: #e6e6e6;
+    padding-top: 25px;
+    box-sizing: border-box;
+
+    @media (max-width: 1164px) {
+        width: auto;
+    }
+
+    .footerBottom {
+        span {
+            width: 260px;
+            color: #7a7a7a;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+        }
+
+        .socialLogos {
+            display: flex;
+            float: right;
+            margin-right: 21px;
+        }
+
+        .socialLogo {
+            height: 32px;
+            width: 32px;
+            margin-left: 8px;
+            color: #000000;
+            font-size: 32px;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+/* Картинок у меня таких нет, реализовал при помощи FontAwesome */
+
+/* /FOOTER_BOTTOM */
+
+/* /FOOTER */

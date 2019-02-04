@@ -11952,5 +11952,343 @@ header .headerInside .logo span {
 }
 
 /* /PRODUCT_PAGE_BOTTOM_BANNER */
+/* /PRODUCT_PAGE_MAIN */
+/* FEEDBACK */
+/* line 624, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.feedbackWrap {
+  margin-top: 80px;
+  width: 1600px;
+  background: url(../imgs/mainPage_feedbackBackgroundPic.png) #ccc;
+  background-blend-mode: overlay;
+}
+
+@media (max-width: 1164px) {
+  /* line 624, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .feedbackWrap {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* line 635, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.feedbackWrap .feedback {
+  display: flex;
+}
+
+@media (max-width: 930px) {
+  /* line 635, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .feedbackWrap .feedback {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+/* COMMENTS_SECTION */
+/* line 647, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.feedback .commentsSection {
+  max-width: 560px;
+  height: 440px;
+  box-sizing: border-box;
+  margin-left: 0;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1 1;
+}
+
+@media (max-width: 930px) {
+  /* line 647, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .feedback .commentsSection {
+    border: none;
+  }
+}
+
+@media (max-width: 930px) {
+  /* line 647, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .feedback .commentsSection {
+    height: 240px;
+    margin-top: 20px;
+  }
+}
+
+/* line 669, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.feedback .commentsSection .commentatorPic1 {
+  height: 83px;
+  width: 83px;
+  background: url(../imgs/mainPage_feedback_commentatorPic1.png);
+  float: left;
+}
+
+/* line 676, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.feedback .commentsSection .commentText {
+  width: 386px;
+  color: #222224;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px;
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 501px) {
+  /* line 676, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .feedback .commentsSection .commentText {
+    height: auto;
+    width: auto;
+  }
+}
+
+/* line 690, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.feedback .commentsSection .commentatorData {
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* line 696, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.feedback .commentsSection .commentatorData span {
+  color: #222224;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+/* line 706, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.feedback .commentsSection .commentSwitch img:not(:first-child) {
+  margin-left: 10px;
+}
+
+/* /COMMENTS_SECTION */
+/* SUBSCRIPTION_SECTION */
+/* line 717, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.subscription_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1 1;
+}
+
+@media (max-width: 930px) {
+  /* line 717, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .subscription_section {
+    max-width: 560px;
+    height: 180px;
+  }
+}
+
+/* line 733, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.subscription_section .subscriptionSection_header p {
+  color: #222224;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+}
+
+/* line 740, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.subscription_section .subscriptionSection_header span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 747, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.subscription_section .subscribe input[type="text"] {
+  border: none;
+  height: 46px;
+  padding-left: 30px;
+  width: 260px;
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  outline: none;
+  background-color: #e1e1e1;
+}
+
+@media (max-width: 544px) {
+  /* line 747, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .subscription_section .subscribe input[type="text"] {
+    width: inherit;
+  }
+}
+
+/* line 765, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.subscription_section .subscribe button {
+  border: none;
+  height: 46px;
+  padding-left: 0px;
+  width: 104px;
+  border-radius: 0 23px 23px 0;
+  background-color: #f16d7f;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+
+/* line 778, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.subscription_section .subscribe {
+  margin-top: 35px;
+  height: auto;
+  border-radius: 23px;
+  background-color: #e1e1e1;
+  overflow: hidden;
+}
+
+/* /SUBSCRIPTION_SECTION */
+/* /FEEDBACK */
+/* FOOTER */
+/* line 793, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footer {
+  width: 1600px;
+}
+
+@media (max-width: 1164px) {
+  /* line 793, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .footer {
+    width: auto;
+  }
+}
+
+/* FOOTER_INSIDE */
+/* line 803, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside {
+  margin-top: 110px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 810, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside .logo {
+  line-height: 51px;
+  width: 165px;
+  background: url(../imgs/logo.png) no-repeat;
+  color: #222222;
+  font-size: 27px;
+  font-weight: 300;
+  padding-left: 72px;
+}
+
+/* line 819, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside .logo span {
+  color: #f16d7f;
+  font-weight: 400;
+}
+
+/* line 825, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside .footerSection {
+  margin-left: 15px;
+}
+
+/* line 828, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside .footerSection p {
+  width: 427px;
+  color: #898989;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+  /* line 828, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .footerInside .footerSection p {
+    width: auto;
+  }
+}
+
+/* line 842, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside .footerSection .footerSection_header {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.45px;
+  margin-top: 12px;
+}
+
+/* line 848, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside .footerSection .footerSection_header a {
+  text-decoration: none;
+  color: #f16d7f;
+}
+
+/* line 854, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside .footerSection ul li {
+  list-style: none;
+  margin-top: 30px;
+}
+
+/* line 858, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside .footerSection ul li:first-child {
+  margin-top: 52px;
+}
+
+/* line 862, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footerInside .footerSection ul li a {
+  text-decoration: none;
+  color: #898989;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+/* /FOOTER_INSIDE */
+/* FOOTER_BOTTOM */
+/* line 877, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footer .footerBottomWrap {
+  height: 79px;
+  width: 1600px;
+  background-color: #e6e6e6;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1164px) {
+  /* line 877, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+  .footer .footerBottomWrap {
+    width: auto;
+  }
+}
+
+/* line 889, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footer .footerBottomWrap .footerBottom span {
+  width: 260px;
+  color: #7a7a7a;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+/* line 897, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footer .footerBottomWrap .footerBottom .socialLogos {
+  display: flex;
+  float: right;
+  margin-right: 21px;
+}
+
+/* line 903, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footer .footerBottomWrap .footerBottom .socialLogo {
+  height: 32px;
+  width: 32px;
+  margin-left: 8px;
+  color: #000000;
+  font-size: 32px;
+}
+
+/* line 910, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/productPageStyle.scss */
+.footer .footerBottomWrap .footerBottom .socialLogo:hover {
+  color: red;
+}
+
+/* Картинок у меня таких нет, реализовал при помощи FontAwesome */
+/* /FOOTER_BOTTOM */
+/* /FOOTER */
 
 /*# sourceMappingURL=../productPageStyle.map */
