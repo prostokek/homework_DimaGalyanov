@@ -1215,6 +1215,7 @@ header {
 
     .feedback {
         display: flex;
+        align-items: center;
 
         @media (max-width: 930px) {
             height: auto;
@@ -1456,7 +1457,7 @@ header {
 /* FOOTER_BOTTOM */
 
 .footer .footerBottomWrap {
-    height: 79px;
+    min-height: 80px;
     width: 1600px;
     background-color: #e6e6e6;
     padding-top: 25px;
@@ -1465,8 +1466,14 @@ header {
     @media (max-width: 1164px) {
         width: auto;
     }
-
+    @media (max-width: 480px) {
+        padding-top: 10px;
+    }
+    
     .footerBottom {
+            display: flex;
+            flex-wrap: wrap;
+        
         span {
             width: 260px;
             color: #7a7a7a;
