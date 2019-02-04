@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
+@import "../../packages/bootstrap-4.2.1/scss/bootstrap.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -1198,6 +1200,352 @@ header {
 
 
 /* /SINGLE_PAGE-MAIN */
+
+
+/* PRODUCT_PAGE_MAIN */
+
+
+/* LEFT_MENU */
+
+.leftMenu {
+    margin-top: 60px;
+
+    details {
+        margin: 10px 0;
+
+        summary {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 35px;
+            border-left: 5px solid #ef5b70;
+            border-bottom: 1px solid #ebebeb;
+
+            &::-webkit-details-marker {
+                position: relative;
+                left: 90%;
+            }
+        }
+
+        .red {
+            color: #ef5b70;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+            margin-top: 10px;
+
+            li {
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+/* /LEFT_MENU */
+
+/* PRODUCT_PAGE_MAIN_CONTENT */
+
+/* TOP_SECTIONS */
+
+.productPage_mainContent {
+    margin-top: 60px;
+
+    section {
+        @media (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h4 {
+            color: #6f6e6e;
+            font-size: 14px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        p {
+            color: #6f6e6e;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+
+            i {
+                transform: rotate(52deg);
+                color: #dfdfdf;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+
+            p {
+                width: 60px;
+                color: #6f6e6e;
+                font-size: 14px;
+                font-weight: 400;
+                margin: 0;
+
+                input {
+                    display: none;
+                }
+
+                label {
+                    background: url(../imgs/input_checkbox_empty.png) no-repeat 3px 3px;
+                    padding-left: 20px;
+                }
+
+                input:checked + label {
+                    background: url(../imgs/input_checkbox_checked.png) no-repeat 3px 3px;
+                }
+            }
+        }
+    }
+
+    .price {
+        @media (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 45px;
+        }
+        
+        .priceRange_pic {
+            background: url(/imgs/priceRange.svg) no-repeat;
+            width: 262px;
+            height: 15px;
+        }
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            padding: 28px 3px;
+            
+        }
+    }
+}
+
+/* TOP_SECTIONS */
+
+/* SELECTOR */
+
+.productPage_mainContent {
+    .mainSelector {
+        width: 846px;
+        height: 50px;
+        background-color: #f3f3f3;
+        display: flex;
+        padding: 10px;
+
+        
+        button {
+            border: none;
+            height: 30px;
+            outline: 1px solid #ebebeb;
+            background-color: #ffffff;
+            color: #6f6e6e;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 0;
+        }
+    }
+}
+
+/* SELECTOR */
+
+/* PRODUCT_PAGE_MAIN_CONTENT_PRODUCTS*/
+
+.productPage_mainContent {
+    .productPage_main_products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+
+        @media (max-width: 991px) {
+            justify-content: center;
+        }
+        
+        .product {
+            margin-top: 40px;
+
+            .item_hover_addToCart {
+                .share {
+                    display: inline-block;
+                    width: 57px;
+                    line-height: 40px;
+                    border-radius: 3px;
+                    border: 1px solid #ffffff;
+                    color: white;
+                    text-align: center;
+                    margin-left: 70px;
+                    margin-top: 10px;
+                }
+
+                .like {
+                    display: inline-block;
+                    width: 57px;
+                    line-height: 40px;
+                    border-radius: 3px;
+                    border: 1px solid #ffffff;
+                    color: white;
+                    text-align: center;
+                    margin-left: 10px;
+                }
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-left: 15px;
+
+                span {
+                    display: block;
+                    margin-top: 15px;
+                    color: #f16d7f;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 54px;
+            height: 50px;
+            width: 210px;
+            background: #f16d7f;
+            margin: 0 auto;
+            text-align: center;
+
+            a {
+                color: #ffffff;
+            }
+        }
+
+        /* /PRODUCT_PAGE_MAIN_CONTENT_PRODUCTS*/
+
+    }
+
+    /* PRODUCT_PAGE_MAIN_CONTENT_PAGINATION*/
+
+    .pagination {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+
+        .pages {
+            display: flex;
+            width: 260px;
+            height: 45px;
+            border-radius: 3px;
+            border: 1px solid #ebebeb;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                color: #c4c4c4;
+                font-size: 16px;
+                font-weight: bold;
+
+                &:hover {
+                    color: #ef5b70;
+                }
+            }
+        }
+
+        .viewAll_button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 44px;
+            border-radius: 3px;
+            border: 1px solid #ef5b70;
+            background-color: #ffffff;
+            color: #ef5b70;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        margin-bottom: 110px;
+    }
+
+    /* PRODUCT_PAGE_MAIN_CONTENT_PAGINATION*/
+
+    /* /PRODUCT_PAGE_MAIN_CONTENT_PAGINATION*/
+}
+
+
+/* PRODUCT_PAGE_BOTTOM_BANNER */
+
+
+.bottomBannerWrap {
+    background-color: #222224;
+    min-width: 1600px;
+    min-height: 340px;
+    align-self: center;
+
+    @media (max-width: 1164px) {
+        min-width: auto;
+    }
+    @media (max-width: 699px) {
+        height: 430px;
+    }
+
+    .bottomBanner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 340px;
+        background-color: #222224;
+        padding: 25px 0;
+        @media (max-width: 1050px) {
+            justify-content: center;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 20px;
+
+            h3 {
+                color: #fbfbfb;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
+
+            p {
+                width: 310px;
+                color: #fbfbfb;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 25px;
+                letter-spacing: 0.35px;
+            }
+        }
+    }
+}
+
+
+/* /PRODUCT_PAGE_BOTTOM_BANNER */
+
+/* /PRODUCT_PAGE_MAIN */
+
 
 
 /* FEEDBACK */
