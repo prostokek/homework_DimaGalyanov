@@ -347,6 +347,11 @@ header {
     margin-top: 60px;
 
     section {
+        @media (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         h4 {
             color: #6f6e6e;
             font-size: 14px;
@@ -394,6 +399,13 @@ header {
     }
 
     .price {
+        @media (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 45px;
+        }
+        
         .priceRange_pic {
             background: url(/imgs/priceRange.svg) no-repeat;
             width: 262px;
@@ -403,7 +415,8 @@ header {
         p {
             display: flex;
             justify-content: space-between;
-            margin-top: 10px;
+            padding: 28px 3px;
+            
         }
     }
 }
@@ -420,6 +433,7 @@ header {
         display: flex;
         padding: 10px;
 
+        
         button {
             border: none;
             height: 30px;
@@ -444,7 +458,10 @@ header {
         justify-content: space-between;
         margin: 0;
 
-
+        @media (max-width: 991px) {
+            justify-content: center;
+        }
+        
         .product {
             margin-top: 40px;
 
@@ -568,11 +585,14 @@ header {
 .bottomBannerWrap {
     background-color: #222224;
     min-width: 1600px;
-    height: 340px;
+    min-height: 340px;
     align-self: center;
 
     @media (max-width: 1164px) {
         min-width: auto;
+    }
+    @media (max-width: 699px) {
+        height: 430px;
     }
 
     .bottomBanner {
@@ -581,6 +601,7 @@ header {
         justify-content: space-between;
         height: 340px;
         background-color: #222224;
+        padding: 25px 0;
         @media (max-width: 1050px) {
             justify-content: center;
         }
@@ -634,7 +655,8 @@ header {
 
     .feedback {
         display: flex;
-
+        align-items: center;
+        
         @media (max-width: 930px) {
             height: auto;
             flex-direction: column;
@@ -875,7 +897,7 @@ header {
 /* FOOTER_BOTTOM */
 
 .footer .footerBottomWrap {
-    height: 79px;
+    min-height: 80px;
     width: 1600px;
     background-color: #e6e6e6;
     padding-top: 25px;
@@ -884,8 +906,14 @@ header {
     @media (max-width: 1164px) {
         width: auto;
     }
+    @media (max-width: 480px) {
+        padding-top: 10px;
+    }
 
     .footerBottom {
+            display: flex;
+            flex-wrap: wrap;
+        
         span {
             width: 260px;
             color: #7a7a7a;
