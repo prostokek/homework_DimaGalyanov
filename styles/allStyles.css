@@ -20,14 +20,14 @@ a:hover {
 }
 
 /* line 18, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
-.container {
+.containerM {
   width: 1164px;
   margin: 0 auto;
 }
 
 @media (max-width: 1164px) {
   /* line 18, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
-  .container {
+  .containerM {
     width: auto;
   }
 }
