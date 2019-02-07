@@ -407,6 +407,14 @@ header {
     .firstSectionPics {
         margin: 10px;
         box-sizing: border-box;
+        display: flex;
+        @media (max-width: 600px) {
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            background-position: center center;
+            background-size: contain;
+        }
         @media (max-width: 1164px) {
             margin: 20px 0;
         }
@@ -426,55 +434,13 @@ header {
             }
             text-align: left;
             padding-left: 20px;
+            @media (max-width: 600px) {
+                position: initial;
+                margin: 0;
+            }
         }
     }
 }
-
-/*.firstSection div {
-    margin-right: 20px;
-    margin-bottom: 20px;
-    position: relative;
-
-    @media (max-width: 1160px) {
-        margin-right: 0;
-    }
-
-    img {
-        @media (max-width: 600px) {
-            
-        }
-    }
-}
-
-.firstSection div:last-child {
-    position: relative;
-    bottom: 281px;
-
-    @media (max-width: 1160px) {
-        bottom: 1px;
-    }
-}*/
-
-/*.firstSection .firstSectionPics p {
-    position: absolute;
-    top: 45px;
-    background: white;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    color: #222222;
-    font-size: 18px;
-    font-weight: 900;
-    @media (max-width: 600px) {
-        align-self: center;
-        left: 50px;
-    }
-}
-
-.firstSection div p span {
-    color: #f16d7f;
-    font-size: 26px;
-    font-weight: 900;
-}/*
 
 /* /FIRSTSECTION */
 
@@ -504,9 +470,13 @@ header {
         display: flex;
         flex-wrap: wrap;
         margin-top: 20px;
+        justify-content: space-between;
+        @media (max-width: 1163px) {
+            justify-content: center;
+        }
 
         .featuredItemsPic {
-            margin-right: 30px;
+            margin: 0 15px;
             margin-top: 40px;
             height: 370px;
             display: flex;
