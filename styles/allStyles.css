@@ -11904,13 +11904,25 @@ header .headerInside .logo span {
 /* BOTTOM_BANNER */
 /* line 526, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner {
-  height: 740px;
+  height: 600px;
   position: relative;
   margin-top: 115px;
   box-sizing: border-box;
+  background: #222224;
+  background: url(../imgs/mainPage_bottomBannerPic.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-/* line 533, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+@media (max-width: 1200px) {
+  /* line 526, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  .bottomBanner {
+    height: auto;
+    padding-top: 300px;
+  }
+}
+
+/* line 541, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner .bottomBannerHeader {
   position: absolute;
   top: 145px;
@@ -11921,40 +11933,19 @@ header .headerInside .logo span {
   letter-spacing: 1.5px;
 }
 
-/* line 543, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 550, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner .bottomBannerHeader span {
   color: #f16d7f;
   letter-spacing: 1.5px;
 }
 
-/* line 548, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 555, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner .bottomBannerHeader p {
   font-size: 32px;
   letter-spacing: 0.9px;
 }
 
-/* line 553, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
-.bottomBanner .merits .delivery .truckPic {
-  height: 40px;
-  width: 47px;
-  background: url(../imgs/mainPage_BottomBanner_truckPic.png) no-repeat;
-}
-
-/* line 559, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
-.bottomBanner .merits .sales .salesPic {
-  height: 40px;
-  width: 47px;
-  background: url(../imgs/mainPage_bottomBanner_salesPic.png) no-repeat;
-}
-
-/* line 565, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
-.bottomBanner .merits .qualityAssurance .qualityAssurancePic {
-  height: 40px;
-  width: 47px;
-  background: url(../imgs/mainPage_bottomBanner_crownPic.png);
-}
-
-/* line 571, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 560, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner .merits {
   position: absolute;
   top: 30px;
@@ -11962,24 +11953,42 @@ header .headerInside .logo span {
   width: 340px;
 }
 
-/* line 578, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+@media (max-width: 1200px) {
+  /* line 560, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  .bottomBanner .merits {
+    position: initial;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+  }
+}
+
+/* line 574, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner .merits .merit {
   display: flex;
   flex-direction: row;
 }
 
-/* line 583, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 577, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner .merits .merit:not(:first-child) {
   margin-top: 30px;
 }
 
-/* line 587, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+@media (max-width: 1200px) {
+  /* line 574, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  .bottomBanner .merits .merit {
+    margin-top: 30px;
+  }
+}
+
+/* line 584, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner .merits .bottomBanner_meritsText {
   margin-left: 30px;
   width: 220px;
 }
 
-/* line 592, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 587, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner .merits .bottomBanner_meritsText p {
   margin-top: 15px;
   width: 220px;
@@ -11990,7 +11999,7 @@ header .headerInside .logo span {
   letter-spacing: 0.35px;
 }
 
-/* line 602, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 596, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBanner .merits .bottomBanner_meritsText h4 {
   color: #fbfbfb;
   font-size: 20px;
@@ -11998,17 +12007,38 @@ header .headerInside .logo span {
   letter-spacing: 0.5px;
 }
 
+/* line 604, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+.bottomBanner .merits .delivery .truckPic {
+  height: 40px;
+  width: 47px;
+  background: url(../imgs/mainPage_BottomBanner_truckPic.png) no-repeat;
+}
+
+/* line 611, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+.bottomBanner .merits .sales .salesPic {
+  height: 40px;
+  width: 47px;
+  background: url(../imgs/mainPage_bottomBanner_salesPic.png) no-repeat;
+}
+
+/* line 618, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+.bottomBanner .merits .qualityAssurance .qualityAssurancePic {
+  height: 40px;
+  width: 47px;
+  background: url(../imgs/mainPage_bottomBanner_crownPic.png);
+}
+
 /* /BOTTOM_BANNER */
 /* /INDEX_MAIN*/
 /* SHOPPING_CART_MAIN */
 /* CART */
 /* CART_TOP */
-/* line 620, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 638, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart {
   margin-top: 90px;
 }
 
-/* line 624, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 642, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart h4 {
   float: left;
   color: #222222;
@@ -12017,7 +12047,7 @@ header .headerInside .logo span {
   letter-spacing: -0.2px;
 }
 
-/* line 632, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 650, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .headers {
   display: flex;
   justify-content: space-between;
@@ -12032,7 +12062,7 @@ header .headerInside .logo span {
 
 /* /CART_TOP */
 /* CART_DETAILS */
-/* line 650, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 668, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .product {
   min-height: 120px;
   padding: 20px 0;
@@ -12041,37 +12071,37 @@ header .headerInside .logo span {
   border-top: 1px solid rgba(128, 128, 128, 0.2);
 }
 
-/* line 657, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 675, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .product:nth-child(3) {
   border-bottom: 1px solid rgba(128, 128, 128, 0.2);
 }
 
 @media (max-width: 567px) {
-  /* line 650, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 668, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart .products .product {
     flex-direction: column;
     max-width: 330px;
   }
 }
 
-/* line 667, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 685, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .productPic {
   display: flex;
   float: left;
 }
 
-/* line 671, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 689, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .productPic img {
   height: 115px;
 }
 
-/* line 675, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 693, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .productPic div {
   margin-left: 20px;
   padding-top: 15px;
 }
 
-/* line 679, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 697, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .productPic div p {
   margin-top: 40px;
   font-size: 13px;
@@ -12080,14 +12110,14 @@ header .headerInside .logo span {
   font-weight: 300;
 }
 
-/* line 687, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 705, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .productPic div h6 {
   color: #222222;
   font-size: 13px;
   font-weight: 400;
 }
 
-/* line 695, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 713, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .details {
   display: flex;
   justify-content: space-between;
@@ -12096,7 +12126,7 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 567px) {
-  /* line 695, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 713, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart .products .details {
     justify-content: space-around;
     max-width: 330px;
@@ -12104,7 +12134,7 @@ header .headerInside .logo span {
   }
 }
 
-/* line 708, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 726, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .details p {
   width: 54px;
   line-height: 30px;
@@ -12119,18 +12149,18 @@ header .headerInside .logo span {
   height: 30px;
 }
 
-/* line 721, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 739, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .details p:nth-child(2) {
   border: 1px solid #eaeaea;
 }
 
-/* line 727, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 745, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .details p:last-child {
   color: gray;
   font-size: 15px;
 }
 
-/* line 732, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 750, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart .products .details p span {
   display: block;
   width: 90px;
@@ -12140,7 +12170,7 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 567px) {
-  /* line 732, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 750, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart .products .details p span {
     font-size: 7px;
     bottom: 30px;
@@ -12153,7 +12183,7 @@ header .headerInside .logo span {
 
 /* /CART_DETAILS */
 /* CART_MIDDLE_BUTTONS */
-/* line 757, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 775, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_middleButtons {
   display: flex;
   justify-content: space-between;
@@ -12161,14 +12191,14 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 500px) {
-  /* line 757, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 775, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart_middleButtons {
     flex-direction: column;
     margin-bottom: 20px;
   }
 }
 
-/* line 767, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 785, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_middleButtons a {
   display: block;
   width: 235px;
@@ -12182,7 +12212,7 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 500px) {
-  /* line 778, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 796, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart_middleButtons a:first-child {
     margin-bottom: 20px;
   }
@@ -12190,25 +12220,25 @@ header .headerInside .logo span {
 
 /* /CART_MIDDLE_BUTTONS */
 /* CART_BOTTOM_SECTIONS*/
-/* line 792, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 810, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections {
   margin-top: 60px;
   display: flex;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-  /* line 792, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 810, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart_bottomSections {
     justify-content: center;
   }
 }
 
-/* line 800, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 818, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections legend {
   margin-bottom: 25px;
 }
 
-/* line 805, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 823, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections form input {
   display: block;
   margin-top: 25px;
@@ -12223,18 +12253,18 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 370px) {
-  /* line 805, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 823, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart_bottomSections form input {
     width: 80%;
   }
 }
 
-/* line 822, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 840, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections form fieldset {
   border: none;
 }
 
-/* line 826, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 844, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections form button {
   width: 100px;
   height: 35px;
@@ -12246,7 +12276,7 @@ header .headerInside .logo span {
   margin-top: 25px;
 }
 
-/* line 838, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 856, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections .total_sumWrap {
   width: 360px;
   height: 214px;
@@ -12256,13 +12286,13 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 400px) {
-  /* line 838, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 856, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart_bottomSections .total_sumWrap {
     flex: 0 0 90%;
   }
 }
 
-/* line 849, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 867, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections .total_sumWrap .total_sum {
   width: 275px;
   margin-top: 40px;
@@ -12272,21 +12302,21 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 400px) {
-  /* line 849, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 867, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart_bottomSections .total_sumWrap .total_sum {
     align-items: center;
     flex: 0 0 100%;
   }
 }
 
-/* line 861, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 879, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections .total_sumWrap .total_sum h3 {
   color: #4a4a4a;
   font-size: 11px;
   font-weight: 400;
 }
 
-/* line 867, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 885, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections .total_sumWrap .total_sum h4 {
   color: #222222;
   font-size: 16px;
@@ -12294,12 +12324,12 @@ header .headerInside .logo span {
   margin-top: 15px;
 }
 
-/* line 873, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 891, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections .total_sumWrap .total_sum h4 span {
   color: #f16d7f;
 }
 
-/* line 878, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 896, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections .total_sumWrap .total_sum .horizontal_line {
   margin-top: 20px;
   width: 275px;
@@ -12307,7 +12337,7 @@ header .headerInside .logo span {
   background-color: #e2e2e2;
 }
 
-/* line 885, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 903, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .cart_bottomSections .total_sumWrap .total_sum a {
   width: 273px;
   line-height: 50px;
@@ -12320,7 +12350,7 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 570px) {
-  /* line 885, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 903, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .cart_bottomSections .total_sumWrap .total_sum a {
     width: auto;
   }
@@ -12331,24 +12361,24 @@ header .headerInside .logo span {
 /* /SHOPPING_CART_MAIN */
 /* CHECKOUT_MAIN */
 /* CHECKOUT-MAIN */
-/* line 914, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 932, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap {
   height: auto;
 }
 
-/* line 918, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 936, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkout {
   padding-top: 90px;
 }
 
-/* line 922, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 940, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .shippingAddress_Flex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-/* line 928, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 946, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkout summary {
   color: #222222;
   font-size: 16px;
@@ -12357,26 +12387,26 @@ header .headerInside .logo span {
   border-top: 1px solid #e8e8e8;
 }
 
-/* line 936, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 954, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .shippingAddress summary:first-child {
   border: none;
 }
 
 /* TO_REGISTRATION */
-/* line 942, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 960, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .to_registration {
   margin-left: 35px;
 }
 
 @media (max-width: 730px) {
-  /* line 947, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 965, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .checkoutWrap .to_registration {
     padding-bottom: 40px;
     border-bottom: 1px solid gray;
   }
 }
 
-/* line 953, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 971, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .to_registration h2 {
   color: #222222;
   font-size: 13px;
@@ -12384,7 +12414,7 @@ header .headerInside .logo span {
   margin-top: 40px;
 }
 
-/* line 960, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 978, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .to_registration h3 {
   color: #b3b2b2;
   font-size: 13px;
@@ -12393,30 +12423,30 @@ header .headerInside .logo span {
   margin-bottom: 25px;
 }
 
-/* line 968, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 986, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .to_registration span {
   line-height: 35px;
 }
 
-/* line 972, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 990, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkout input[name="checkout_or_reg"] {
   display: none;
 }
 
-/* line 976, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 994, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkout label[for="guest"],
 .checkout label[for="reg"] {
   background: url(../imgs/input_radio_empty.png) no-repeat 3px 3px;
   padding-left: 20px;
 }
 
-/* line 982, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1000, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkout #guest:checked + label,
 .checkout #reg:checked + label {
   background: url(../imgs/input_radio_checked.png) no-repeat 3px 3px;
 }
 
-/* line 987, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1005, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .to_registration p {
   color: #b3b2b2;
   font-size: 13px;
@@ -12425,7 +12455,7 @@ header .headerInside .logo span {
   height: 70px;
 }
 
-/* line 995, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1013, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .to_registration button {
   width: 180px;
   height: 50px;
@@ -12438,12 +12468,12 @@ header .headerInside .logo span {
 
 /* /TO_REGISTRATION */
 /* LOGIN */
-/* line 1009, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1027, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .login {
   margin-left: 35px;
 }
 
-/* line 1013, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1031, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .login h2 {
   color: #222222;
   font-size: 13px;
@@ -12451,7 +12481,7 @@ header .headerInside .logo span {
   margin-top: 40px;
 }
 
-/* line 1020, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1038, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .login h3 {
   color: #b3b2b2;
   font-size: 13px;
@@ -12460,7 +12490,7 @@ header .headerInside .logo span {
   margin-bottom: 33px;
 }
 
-/* line 1028, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1046, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .login p {
   display: inline;
   color: #222222;
@@ -12469,14 +12499,14 @@ header .headerInside .logo span {
   margin-bottom: 15px;
 }
 
-/* line 1036, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1054, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .login .red {
   color: #ff0d0d;
   font-size: 13px;
   font-weight: 400;
 }
 
-/* line 1042, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1060, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .login input {
   width: 390px;
   height: 45px;
@@ -12486,13 +12516,13 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 500px) {
-  /* line 1042, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1060, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .checkoutWrap .login input {
     width: 260px;
   }
 }
 
-/* line 1054, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1072, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .login button {
   width: 180px;
   height: 50px;
@@ -12504,7 +12534,7 @@ header .headerInside .logo span {
   margin-top: 27px;
 }
 
-/* line 1065, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1083, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .checkoutWrap .login .forgot {
   display: inline-block;
   color: #222222;
@@ -12518,13 +12548,13 @@ header .headerInside .logo span {
 /* /CHECKOUT-MAIN */
 /* SINGLE_PAGE-MAIN */
 /* SINGLE_PAGE_BANNER */
-/* line 1083, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1101, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageBannerWrap {
   background: url(../imgs/SinglePage_Main_Background.png);
   height: 780px;
 }
 
-/* line 1087, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1105, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageBannerWrap .sliders {
   height: inherit;
   position: absolute;
@@ -12535,29 +12565,29 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 1164px) {
-  /* line 1087, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1105, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .singlePageBannerWrap .sliders {
     width: 100%;
   }
 }
 
-/* line 1099, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1117, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageBannerWrap .sliders .sliderImg {
   position: relative;
   top: calc(50% - 47px /2);
 }
 
-/* line 1103, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1121, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageBannerWrap .sliders .sliderImg a:hover {
   /*НА КАКИЕ КАРТИНКИ ОНИ ДОЛЖНЫ МЕНЯТЬСЯ ПРИ НАВЕДЕНИИ Я НЕ ЗНАЮ (В МАКЕТЕ ЭТОГО НЕ НАШЁЛ)*/
 }
 
-/* line 1108, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1126, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageBannerWrap .sliders img[alt="sliderPicRight"] {
   top: 20px;
 }
 
-/* line 1114, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1132, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageBanner {
   background: url(../imgs/SinglePage_main_BGPic.png) no-repeat center center;
   height: inherit;
@@ -12565,7 +12595,7 @@ header .headerInside .logo span {
 
 /* /SINGLE_PAGE_BANNER */
 /* SINGLE_PAGE_OFFER */
-/* line 1127, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1145, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer {
   /*height: 730px;*/
   max-width: 640px;
@@ -12576,7 +12606,7 @@ header .headerInside .logo span {
   display: flex;
 }
 
-/* line 1136, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1154, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent {
   min-height: 600px;
   /*height: 600px;*/
@@ -12587,7 +12617,7 @@ header .headerInside .logo span {
   flex-direction: column;
 }
 
-/* line 1145, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1163, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info {
   display: flex;
   flex-direction: column;
@@ -12595,14 +12625,14 @@ header .headerInside .logo span {
   text-align: center;
 }
 
-/* line 1151, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1169, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info h3 {
   color: #f16d7f;
   font-size: 14px;
   font-weight: 700;
 }
 
-/* line 1157, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1175, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info .redRectangle {
   width: 63px;
   height: 3px;
@@ -12610,7 +12640,7 @@ header .headerInside .logo span {
   margin: 15px 0;
 }
 
-/* line 1164, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1182, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info h2 {
   color: #212121;
   font-size: 18px;
@@ -12619,7 +12649,7 @@ header .headerInside .logo span {
   margin-bottom: 65px;
 }
 
-/* line 1172, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1190, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info .description {
   color: #5e5e5e;
   font-size: 14px;
@@ -12627,24 +12657,24 @@ header .headerInside .logo span {
   margin-bottom: 25px;
 }
 
-/* line 1179, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1197, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info p {
   color: #2f2f2f;
   font-size: 14px;
   font-weight: 700;
 }
 
-/* line 1185, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1203, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info p .gray {
   color: #b9b9b9;
 }
 
-/* line 1188, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1206, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info p .gray:last-child {
   margin-left: 45px;
 }
 
-/* line 1194, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1212, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info h1 {
   color: #ef5b70;
   font-size: 24px;
@@ -12652,7 +12682,7 @@ header .headerInside .logo span {
   margin: 45px 0;
 }
 
-/* line 1201, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1219, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .text_info .horizontalLine {
   width: 600px;
   height: 1px;
@@ -12661,25 +12691,25 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 600px) {
-  /* line 1201, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1219, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .singlePageOffer .singlePageOfferContent .text_info .horizontalLine {
     width: 320px;
   }
 }
 
 @media (max-width: 320px) {
-  /* line 1201, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1219, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .singlePageOffer .singlePageOfferContent .text_info .horizontalLine {
     width: 180px;
   }
 }
 
-/* line 1217, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1235, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .addToCart {
   margin-top: 60px;
 }
 
-/* line 1220, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1238, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .addToCart .inputs {
   display: flex;
   justify-content: space-between;
@@ -12690,14 +12720,14 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 600px) {
-  /* line 1220, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1238, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .singlePageOffer .singlePageOfferContent .addToCart .inputs {
     flex-direction: column;
     align-items: center;
   }
 }
 
-/* line 1231, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1249, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .addToCart .inputs div {
   display: flex;
   flex-direction: column;
@@ -12705,13 +12735,13 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 600px) {
-  /* line 1231, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1249, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .singlePageOffer .singlePageOfferContent .addToCart .inputs div {
     width: 80%;
   }
 }
 
-/* line 1240, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1258, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .addToCart .inputs div label {
   color: #2f2f2f;
   font-size: 14px;
@@ -12719,7 +12749,7 @@ header .headerInside .logo span {
   line-height: 24px;
 }
 
-/* line 1247, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1265, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .addToCart .inputs div input {
   width: 144px;
   height: 35px;
@@ -12731,13 +12761,13 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 600px) {
-  /* line 1247, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1265, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .singlePageOffer .singlePageOfferContent .addToCart .inputs div input {
     width: 80%;
   }
 }
 
-/* line 1267, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1285, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .singlePageOffer .singlePageOfferContent .addToCart .addToCartButton {
   display: block;
   width: 540px;
@@ -12752,7 +12782,7 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 600px) {
-  /* line 1267, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1285, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .singlePageOffer .singlePageOfferContent .addToCart .addToCartButton {
     width: auto;
   }
@@ -12760,14 +12790,14 @@ header .headerInside .logo span {
 
 /* /SINGLE_PAGE_OFFER */
 /* U_MAY_LIKE_ALSO */
-/* line 1291, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1309, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .uMayLikeAlso {
   min-height: 650px;
   padding-top: 120px;
   box-sizing: border-box;
 }
 
-/* line 1296, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1314, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .uMayLikeAlso h1 {
   text-align: center;
   color: #4d4d4d;
@@ -12777,7 +12807,7 @@ header .headerInside .logo span {
   margin-bottom: 70px;
 }
 
-/* line 1305, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1323, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .uMayLikeAlso .block {
   display: flex;
   flex-wrap: wrap;
@@ -12785,18 +12815,18 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 842px) {
-  /* line 1305, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1323, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .uMayLikeAlso .block {
     justify-content: space-around;
   }
 }
 
-/* line 1314, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1332, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .uMayLikeAlso .block section {
   margin: 15px;
 }
 
-/* line 1318, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1336, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .uMayLikeAlso .block h2 {
   margin-top: 20px;
   color: #6f6e6e;
@@ -12805,7 +12835,7 @@ header .headerInside .logo span {
   margin-left: 10px;
 }
 
-/* line 1326, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1344, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .uMayLikeAlso .block p {
   color: #f16d7f;
   font-size: 16px;
@@ -12817,17 +12847,17 @@ header .headerInside .logo span {
 /* /SINGLE_PAGE-MAIN */
 /* PRODUCT_PAGE_MAIN */
 /* LEFT_MENU */
-/* line 1347, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1365, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .leftMenu {
   margin-top: 60px;
 }
 
-/* line 1350, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1368, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .leftMenu details {
   margin: 10px 0;
 }
 
-/* line 1353, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1371, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .leftMenu details summary {
   font-size: 14px;
   font-weight: 700;
@@ -12836,25 +12866,25 @@ header .headerInside .logo span {
   border-bottom: 1px solid #ebebeb;
 }
 
-/* line 1360, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1378, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .leftMenu details summary::-webkit-details-marker {
   position: relative;
   left: 90%;
 }
 
-/* line 1366, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1384, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .leftMenu details .red {
   color: #ef5b70;
 }
 
-/* line 1370, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1388, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .leftMenu details ul {
   list-style: none;
   padding-left: 20px;
   margin-top: 10px;
 }
 
-/* line 1375, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1393, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .leftMenu details ul li {
   color: #6f6e6e;
   font-size: 14px;
@@ -12866,13 +12896,13 @@ header .headerInside .logo span {
 /* /LEFT_MENU */
 /* PRODUCT_PAGE_MAIN_CONTENT */
 /* TOP_SECTIONS */
-/* line 1392, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1410, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent {
   margin-top: 60px;
 }
 
 @media (max-width: 991px) {
-  /* line 1395, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1413, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .productPage_mainContent section {
     display: flex;
     flex-direction: column;
@@ -12880,7 +12910,7 @@ header .headerInside .logo span {
   }
 }
 
-/* line 1402, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1420, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent section h4 {
   color: #6f6e6e;
   font-size: 14px;
@@ -12888,7 +12918,7 @@ header .headerInside .logo span {
   margin: 20px 0;
 }
 
-/* line 1409, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1427, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent section p {
   color: #6f6e6e;
   font-size: 14px;
@@ -12896,19 +12926,19 @@ header .headerInside .logo span {
   margin-bottom: 10px;
 }
 
-/* line 1415, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1433, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent section p i {
   transform: rotate(52deg);
   color: #dfdfdf;
 }
 
-/* line 1421, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1439, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent section form {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 1425, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1443, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent section form p {
   width: 60px;
   color: #6f6e6e;
@@ -12917,24 +12947,24 @@ header .headerInside .logo span {
   margin: 0;
 }
 
-/* line 1432, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1450, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent section form p input {
   display: none;
 }
 
-/* line 1436, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1454, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent section form p label {
   background: url(../imgs/input_checkbox_empty.png) no-repeat 3px 3px;
   padding-left: 20px;
 }
 
-/* line 1441, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1459, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent section form p input:checked + label {
   background: url(../imgs/input_checkbox_checked.png) no-repeat 3px 3px;
 }
 
 @media (max-width: 991px) {
-  /* line 1448, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1466, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .productPage_mainContent .price {
     display: flex;
     flex-direction: column;
@@ -12943,14 +12973,14 @@ header .headerInside .logo span {
   }
 }
 
-/* line 1456, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1474, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .price .priceRange_pic {
   background: url(/imgs/priceRange.svg) no-repeat;
   width: 262px;
   height: 15px;
 }
 
-/* line 1462, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1480, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .price p {
   display: flex;
   justify-content: space-between;
@@ -12959,7 +12989,7 @@ header .headerInside .logo span {
 
 /* TOP_SECTIONS */
 /* SELECTOR */
-/* line 1476, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1494, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .mainSelector {
   width: 846px;
   height: 50px;
@@ -12968,7 +12998,7 @@ header .headerInside .logo span {
   padding: 10px;
 }
 
-/* line 1484, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1502, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .mainSelector button {
   border: none;
   height: 30px;
@@ -12982,14 +13012,14 @@ header .headerInside .logo span {
 
 /* SELECTOR */
 /* PRODUCT_PAGE_MAIN_CONTENT_PRODUCTS*/
-/* line 1501, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1519, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent {
   /* PRODUCT_PAGE_MAIN_CONTENT_PAGINATION*/
   /* PRODUCT_PAGE_MAIN_CONTENT_PAGINATION*/
   /* /PRODUCT_PAGE_MAIN_CONTENT_PAGINATION*/
 }
 
-/* line 1502, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1520, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .productPage_main_products {
   display: flex;
   flex-wrap: wrap;
@@ -12999,18 +13029,18 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 991px) {
-  /* line 1502, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1520, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .productPage_mainContent .productPage_main_products {
     justify-content: center;
   }
 }
 
-/* line 1512, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1530, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .productPage_main_products .product {
   margin-top: 40px;
 }
 
-/* line 1516, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1534, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .productPage_main_products .product .item_hover_addToCart .share {
   display: inline-block;
   width: 57px;
@@ -13023,7 +13053,7 @@ header .headerInside .logo span {
   margin-top: 10px;
 }
 
-/* line 1528, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1546, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .productPage_main_products .product .item_hover_addToCart .like {
   display: inline-block;
   width: 57px;
@@ -13035,7 +13065,7 @@ header .headerInside .logo span {
   margin-left: 10px;
 }
 
-/* line 1540, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1558, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .productPage_main_products .product p {
   font-size: 13px;
   font-weight: 400;
@@ -13044,7 +13074,7 @@ header .headerInside .logo span {
   margin-left: 15px;
 }
 
-/* line 1547, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1565, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .productPage_main_products .product p span {
   display: block;
   margin-top: 15px;
@@ -13053,7 +13083,7 @@ header .headerInside .logo span {
   font-weight: 700;
 }
 
-/* line 1558, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1576, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .productPage_main_products h3 {
   font-size: 16px;
   font-weight: 700;
@@ -13065,12 +13095,12 @@ header .headerInside .logo span {
   text-align: center;
 }
 
-/* line 1568, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1586, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .productPage_main_products h3 a {
   color: #ffffff;
 }
 
-/* line 1579, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1597, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .pagination {
   margin-top: 60px;
   display: flex;
@@ -13078,7 +13108,7 @@ header .headerInside .logo span {
   margin-bottom: 110px;
 }
 
-/* line 1584, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1602, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .pagination .pages {
   display: flex;
   width: 260px;
@@ -13091,19 +13121,19 @@ header .headerInside .logo span {
   align-items: center;
 }
 
-/* line 1595, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1613, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .pagination .pages a {
   color: #c4c4c4;
   font-size: 16px;
   font-weight: bold;
 }
 
-/* line 1600, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1618, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .pagination .pages a:hover {
   color: #ef5b70;
 }
 
-/* line 1606, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1624, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .productPage_mainContent .pagination .viewAll_button {
   display: flex;
   align-items: center;
@@ -13119,7 +13149,7 @@ header .headerInside .logo span {
 }
 
 /* PRODUCT_PAGE_BOTTOM_BANNER */
-/* line 1632, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1650, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBannerWrap {
   background-color: #222224;
   min-width: 1600px;
@@ -13128,20 +13158,20 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 1164px) {
-  /* line 1632, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1650, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .bottomBannerWrap {
     min-width: auto;
   }
 }
 
 @media (max-width: 699px) {
-  /* line 1632, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1650, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .bottomBannerWrap {
     height: 430px;
   }
 }
 
-/* line 1646, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1664, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBannerWrap .bottomBanner {
   display: flex;
   flex-wrap: wrap;
@@ -13152,13 +13182,13 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 1050px) {
-  /* line 1646, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1664, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .bottomBannerWrap .bottomBanner {
     justify-content: center;
   }
 }
 
-/* line 1658, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1676, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBannerWrap .bottomBanner section {
   display: flex;
   flex-direction: column;
@@ -13167,7 +13197,7 @@ header .headerInside .logo span {
   margin: 0 20px;
 }
 
-/* line 1665, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1683, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBannerWrap .bottomBanner section h3 {
   color: #fbfbfb;
   font-size: 20px;
@@ -13175,7 +13205,7 @@ header .headerInside .logo span {
   letter-spacing: 0.5px;
 }
 
-/* line 1672, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1690, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .bottomBannerWrap .bottomBanner section p {
   width: 310px;
   color: #fbfbfb;
@@ -13188,7 +13218,7 @@ header .headerInside .logo span {
 /* /PRODUCT_PAGE_BOTTOM_BANNER */
 /* /PRODUCT_PAGE_MAIN */
 /* FEEDBACK */
-/* line 1693, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1711, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .feedbackWrap {
   margin-top: 80px;
   width: 1600px;
@@ -13197,21 +13227,21 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 1164px) {
-  /* line 1693, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1711, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .feedbackWrap {
     width: auto;
     height: auto;
   }
 }
 
-/* line 1704, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1722, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .feedbackWrap .feedback {
   display: flex;
   align-items: center;
 }
 
 @media (max-width: 930px) {
-  /* line 1704, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1722, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .feedbackWrap .feedback {
     height: auto;
     flex-direction: column;
@@ -13219,7 +13249,7 @@ header .headerInside .logo span {
 }
 
 /* COMMENTS_SECTION */
-/* line 1717, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1735, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .feedback .commentsSection {
   max-width: 560px;
   height: 440px;
@@ -13235,21 +13265,21 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 930px) {
-  /* line 1717, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1735, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .feedback .commentsSection {
     border: none;
   }
 }
 
 @media (max-width: 930px) {
-  /* line 1717, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1735, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .feedback .commentsSection {
     height: 240px;
     margin-top: 20px;
   }
 }
 
-/* line 1739, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1757, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .feedback .commentsSection .commentatorPic1 {
   height: 83px;
   width: 83px;
@@ -13257,7 +13287,7 @@ header .headerInside .logo span {
   float: left;
 }
 
-/* line 1746, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1764, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .feedback .commentsSection .commentText {
   width: 386px;
   color: #222224;
@@ -13268,14 +13298,14 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 501px) {
-  /* line 1746, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1764, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .feedback .commentsSection .commentText {
     height: auto;
     width: auto;
   }
 }
 
-/* line 1760, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1778, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .feedback .commentsSection .commentatorData {
   color: #f16d7f;
   font-size: 16px;
@@ -13283,7 +13313,7 @@ header .headerInside .logo span {
   letter-spacing: 0.4px;
 }
 
-/* line 1766, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1784, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .feedback .commentsSection .commentatorData span {
   color: #222224;
   font-size: 12px;
@@ -13291,14 +13321,14 @@ header .headerInside .logo span {
   letter-spacing: 0.3px;
 }
 
-/* line 1776, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1794, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .feedback .commentsSection .commentSwitch img:not(:first-child) {
   margin-left: 10px;
 }
 
 /* /COMMENTS_SECTION */
 /* SUBSCRIPTION_SECTION */
-/* line 1787, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1805, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .subscription_section {
   display: flex;
   flex-direction: column;
@@ -13309,14 +13339,14 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 930px) {
-  /* line 1787, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1805, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .subscription_section {
     max-width: 560px;
     height: 180px;
   }
 }
 
-/* line 1803, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1821, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .subscription_section .subscriptionSection_header p {
   color: #222224;
   font-weight: 400;
@@ -13324,13 +13354,13 @@ header .headerInside .logo span {
   letter-spacing: 0.6px;
 }
 
-/* line 1810, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1828, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .subscription_section .subscriptionSection_header span {
   font-size: 14px;
   font-weight: 400;
 }
 
-/* line 1817, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1835, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .subscription_section .subscribe input[type="text"] {
   border: none;
   height: 46px;
@@ -13346,13 +13376,13 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 544px) {
-  /* line 1817, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1835, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .subscription_section .subscribe input[type="text"] {
     width: inherit;
   }
 }
 
-/* line 1835, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1853, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .subscription_section .subscribe button {
   border: none;
   height: 46px;
@@ -13366,7 +13396,7 @@ header .headerInside .logo span {
   letter-spacing: 0.35px;
 }
 
-/* line 1848, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1866, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .subscription_section .subscribe {
   margin-top: 35px;
   height: auto;
@@ -13378,20 +13408,20 @@ header .headerInside .logo span {
 /* /SUBSCRIPTION_SECTION */
 /* /FEEDBACK */
 /* FOOTER */
-/* line 1863, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1881, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footer {
   width: 1600px;
 }
 
 @media (max-width: 1164px) {
-  /* line 1863, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1881, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .footer {
     width: auto;
   }
 }
 
 /* FOOTER_INSIDE */
-/* line 1873, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1891, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside {
   margin-top: 110px;
   margin-bottom: 100px;
@@ -13400,7 +13430,7 @@ header .headerInside .logo span {
   justify-content: space-between;
 }
 
-/* line 1880, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1898, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside .logo {
   line-height: 51px;
   width: 165px;
@@ -13411,18 +13441,18 @@ header .headerInside .logo span {
   padding-left: 72px;
 }
 
-/* line 1889, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1907, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside .logo span {
   color: #f16d7f;
   font-weight: 400;
 }
 
-/* line 1895, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1913, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside .footerSection {
   margin-left: 15px;
 }
 
-/* line 1898, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1916, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside .footerSection p {
   width: 427px;
   color: #898989;
@@ -13434,13 +13464,13 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 500px) {
-  /* line 1898, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1916, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .footerInside .footerSection p {
     width: auto;
   }
 }
 
-/* line 1912, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1930, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside .footerSection .footerSection_header {
   font-size: 18px;
   font-weight: 700;
@@ -13448,24 +13478,24 @@ header .headerInside .logo span {
   margin-top: 12px;
 }
 
-/* line 1918, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1936, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside .footerSection .footerSection_header a {
   text-decoration: none;
   color: #f16d7f;
 }
 
-/* line 1924, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1942, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside .footerSection ul li {
   list-style: none;
   margin-top: 30px;
 }
 
-/* line 1928, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1946, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside .footerSection ul li:first-child {
   margin-top: 52px;
 }
 
-/* line 1932, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1950, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footerInside .footerSection ul li a {
   text-decoration: none;
   color: #898989;
@@ -13476,7 +13506,7 @@ header .headerInside .logo span {
 
 /* /FOOTER_INSIDE */
 /* FOOTER_BOTTOM */
-/* line 1947, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1965, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footer .footerBottomWrap {
   min-height: 80px;
   width: 1600px;
@@ -13486,26 +13516,26 @@ header .headerInside .logo span {
 }
 
 @media (max-width: 1164px) {
-  /* line 1947, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1965, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .footer .footerBottomWrap {
     width: auto;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 1947, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+  /* line 1965, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
   .footer .footerBottomWrap {
     padding-top: 10px;
   }
 }
 
-/* line 1962, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1980, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footer .footerBottomWrap .footerBottom {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 1966, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1984, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footer .footerBottomWrap .footerBottom span {
   width: 260px;
   color: #7a7a7a;
@@ -13514,14 +13544,14 @@ header .headerInside .logo span {
   letter-spacing: 0.4px;
 }
 
-/* line 1974, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1992, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footer .footerBottomWrap .footerBottom .socialLogos {
   display: flex;
   float: right;
   margin-right: 21px;
 }
 
-/* line 1980, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 1998, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footer .footerBottomWrap .footerBottom .socialLogo {
   height: 32px;
   width: 32px;
@@ -13531,7 +13561,7 @@ header .headerInside .logo span {
   transition-duration: 1s;
 }
 
-/* line 1988, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
+/* line 2006, E:/Coding/Learning with GeekBrains/git/homework_DimaGalyanov/styles/scss/allStyles.scss */
 .footer .footerBottomWrap .footerBottom .socialLogo:hover {
   color: red;
 }

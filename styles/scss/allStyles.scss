@@ -524,86 +524,104 @@ header {
 /* BOTTOM_BANNER */
 
 .bottomBanner {
-    height: 740px;
+    height: 600px;
     position: relative;
     margin-top: 115px;
     box-sizing: border-box;
-}
+    background: #222224;
+    background: url(../imgs/mainPage_bottomBannerPic.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @media (max-width: 1200px) {
+        height: auto;
+        padding-top: 300px;
+    }
 
-.bottomBanner .bottomBannerHeader {
-    position: absolute;
-    top: 145px;
-    left: 40px;
-    color: #ffffff;
-    font-size: 54px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
+    
+    .bottomBannerHeader {
+        position: absolute;
+        top: 145px;
+        left: 40px;
+        color: #ffffff;
+        font-size: 54px;
+        font-weight: 700;
+        letter-spacing: 1.5px; 
 
-.bottomBanner .bottomBannerHeader span {
-    color: #f16d7f;
-    letter-spacing: 1.5px;
-}
+        span {
+            color: #f16d7f;
+            letter-spacing: 1.5px;
+        }
 
-.bottomBanner .bottomBannerHeader p {
-    font-size: 32px;
-    letter-spacing: 0.9px;
-}
-
-.bottomBanner .merits .delivery .truckPic {
-    height: 40px;
-    width: 47px;
-    background: url(../imgs/mainPage_BottomBanner_truckPic.png) no-repeat;
-}
-
-.bottomBanner .merits .sales .salesPic {
-    height: 40px;
-    width: 47px;
-    background: url(../imgs/mainPage_bottomBanner_salesPic.png) no-repeat;
-}
-
-.bottomBanner .merits .qualityAssurance .qualityAssurancePic {
-    height: 40px;
-    width: 47px;
-    background: url(../imgs/mainPage_bottomBanner_crownPic.png);
-}
-
-.bottomBanner .merits {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    width: 340px;
-}
-
-.bottomBanner .merits .merit {
-    display: flex;
-    flex-direction: row;
-}
-
-.bottomBanner .merits .merit:not(:first-child) {
-    margin-top: 30px;
-}
-
-.bottomBanner .merits .bottomBanner_meritsText {
-    margin-left: 30px;
-    width: 220px;
-}
-
-.bottomBanner .merits .bottomBanner_meritsText p {
-    margin-top: 15px;
-    width: 220px;
-    color: #fbfbfb;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.35px;
-}
-
-.bottomBanner .merits .bottomBanner_meritsText h4 {
-    color: #fbfbfb;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+        p {
+            font-size: 32px;
+            letter-spacing: 0.9px;
+        }
+    }
+    .merits {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        width: 340px;
+        
+        
+        @media (max-width: 1200px) {
+            position: initial;
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            justify-content: center;
+        }
+        .merit {
+            display: flex;
+            flex-direction: row;
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+            @media (max-width: 1200px) {
+                margin-top: 30px;
+            }
+        }
+        .bottomBanner_meritsText {
+            margin-left: 30px;
+            width: 220px;
+            p {
+                margin-top: 15px;
+                width: 220px;
+                color: #fbfbfb;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 24px;
+                letter-spacing: 0.35px;
+            }
+            h4 {
+                color: #fbfbfb;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
+        }
+        .delivery {
+            .truckPic {
+                height: 40px;
+                width: 47px;
+                background: url(../imgs/mainPage_BottomBanner_truckPic.png) no-repeat;
+            }
+        }
+        .sales {
+            .salesPic {
+                height: 40px;
+                width: 47px;
+                background: url(../imgs/mainPage_bottomBanner_salesPic.png) no-repeat;
+            }
+        }
+        .qualityAssurance {
+            .qualityAssurancePic {
+                height: 40px;
+                width: 47px;
+                background: url(../imgs/mainPage_bottomBanner_crownPic.png);
+            }
+        }
+    }
 }
 
 /* /BOTTOM_BANNER */
