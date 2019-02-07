@@ -309,7 +309,6 @@ header {
 
 .topBannerWrap {
     height: 610px;
-    width: 1600px;
     background: #e8e8e8;
 }
 
@@ -318,6 +317,10 @@ header {
     height: inherit;
     padding-top: 225px;
     box-sizing: border-box;
+
+    @media (max-width: 992px) {
+        background: url(../imgs/mainPageTopBannerCut.png) no-repeat;
+    }
 }
 
 .topBanner .topBannerRectangle {
@@ -355,23 +358,104 @@ header {
 .firstSection {
     margin-top: 100px;
     box-sizing: border-box;
-    height: 920px;
+    min-height: 920px;
     display: flex;
     flex-wrap: wrap;
+    
+
+    @media (max-width: 1164px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pic1 {
+        background: url(../imgs/mainPageFirstSection_Pic1.png) no-repeat;
+        width: 560px; height: 542px;
+        margin-bottom: 20px;
+        p {
+            width: 175px;
+        }
+    }
+    .pic2 {
+        background: url(../imgs/mainPageFirstSection_Pic2.png) no-repeat;
+        width: 560px; height: 261px;
+        p {
+            width: 160px;
+        }
+    }
+    .pic3 {
+        background: url(../imgs/mainPageFirstSection_Pic3.png) no-repeat;
+        width: 560px; height: 261px;
+        p {
+            width: 245px;
+        }
+    }
+    .pic4 {
+        background: url(../imgs/mainPageFirstSection_Pic4.png) no-repeat;
+        width: 560px; height: 542px;
+        position: relative;
+        bottom: 280px;
+        @media (max-width: 1164px) {
+            position: initial;
+        }
+        p {
+            width: 180px;
+        }
+    }
+    
+    .firstSectionPics {
+        margin: 10px;
+        box-sizing: border-box;
+        @media (max-width: 1164px) {
+            margin: 20px 0;
+        }
+        p {
+            position: relative;
+            top: 25px;
+            height: 80px;
+            background-color: #ffffff;
+            color: #222222;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.45px;
+            span {
+            color: #f16d7f;
+            font-size: 30px;
+            letter-spacing: 0.75px;
+            }
+            text-align: left;
+            padding-left: 20px;
+        }
+    }
 }
 
-.firstSection div {
+/*.firstSection div {
     margin-right: 20px;
     margin-bottom: 20px;
     position: relative;
+
+    @media (max-width: 1160px) {
+        margin-right: 0;
+    }
+
+    img {
+        @media (max-width: 600px) {
+            
+        }
+    }
 }
 
 .firstSection div:last-child {
     position: relative;
     bottom: 281px;
-}
 
-.firstSection .firstSectionPics p {
+    @media (max-width: 1160px) {
+        bottom: 1px;
+    }
+}*/
+
+/*.firstSection .firstSectionPics p {
     position: absolute;
     top: 45px;
     background: white;
@@ -380,19 +464,24 @@ header {
     color: #222222;
     font-size: 18px;
     font-weight: 900;
+    @media (max-width: 600px) {
+        align-self: center;
+        left: 50px;
+    }
 }
 
 .firstSection div p span {
     color: #f16d7f;
     font-size: 26px;
     font-weight: 900;
-}
+}/*
 
 /* /FIRSTSECTION */
 
 /* FEATURED_ITEMS */
 
 .featuredItems {
+    margin-top: 120px;
     h1 {
         color: #222222;
         font-size: 24px;
@@ -733,12 +822,15 @@ header {
 .cart_bottomSections {
     margin-top: 60px;
     display: flex;
+
     @media (max-width: 1199px) and (min-width: 992px) {
         justify-content: center;
     }
+
     legend {
         margin-bottom: 25px;
     }
+
     form {
         input {
             display: block;
@@ -751,13 +843,16 @@ header {
             color: #b1b1b1;
             font-size: 13px;
             font-weight: 300;
+
             @media (max-width: 370px) {
                 width: 80%;
             }
         }
+
         fieldset {
             border: none;
         }
+
         button {
             width: 100px;
             height: 35px;
@@ -769,45 +864,54 @@ header {
             margin-top: 25px;
         }
     }
+
     .total_sumWrap {
         width: 360px;
         height: 214px;
         background-color: #f5f3f3;
         display: flex;
         justify-content: center;
+
         @media (max-width: 400px) {
             flex: 0 0 90%;
         }
+
         .total_sum {
             width: 275px;
             margin-top: 40px;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+
             @media (max-width: 400px) {
                 align-items: center;
                 flex: 0 0 100%;
             }
+
             h3 {
                 color: #4a4a4a;
                 font-size: 11px;
                 font-weight: 400;
             }
+
             h4 {
                 color: #222222;
                 font-size: 16px;
                 font-weight: 700;
                 margin-top: 15px;
+
                 span {
                     color: #f16d7f;
                 }
             }
+
             .horizontal_line {
-               margin-top: 20px;
+                margin-top: 20px;
                 width: 275px;
                 height: 1px;
-                background-color: #e2e2e2; 
+                background-color: #e2e2e2;
             }
+
             a {
                 width: 273px;
                 line-height: 50px;
@@ -817,6 +921,7 @@ header {
                 font-weight: 700;
                 text-align: center;
                 margin-top: 15px;
+
                 @media (max-width: 570px) {
                     width: auto;
                 }
