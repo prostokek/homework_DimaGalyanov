@@ -62,6 +62,7 @@ a {
         height: 280px;
         width: 261px;
         display: none;
+        
 
         .addToCart_tablet {
             display: block;
@@ -1117,10 +1118,6 @@ header {
         .sliderImg {
             position: relative;
             top: calc(50% - 47px /2);
-
-            a:hover {
-                /*НА КАКИЕ КАРТИНКИ ОНИ ДОЛЖНЫ МЕНЯТЬСЯ ПРИ НАВЕДЕНИИ Я НЕ ЗНАЮ (В МАКЕТЕ ЭТОГО НЕ НАШЁЛ)*/
-            }
         }
 
         img[alt="sliderPicRight"] {
