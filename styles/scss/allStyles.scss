@@ -2,6 +2,8 @@
 
 @import "../../packages/bootstrap-4.2.1/scss/bootstrap.scss";
 
+@import "./variables.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -141,7 +143,7 @@ header {
             }
 
             span {
-                color: #f16d7f;
+                color: $mainColor;
                 font-weight: 400;
             }
         }
@@ -210,7 +212,7 @@ header {
 }
 
 .headerInside .myAccount {
-    background-color: #f16d7f;
+    background-color: $mainColor;
     padding: 15px;
     color: #ffffff;
     font-size: 15px;
@@ -252,7 +254,7 @@ header {
 
         &:hover {
             border-bottom: 3px solid #ef5b70;
-            color: #f16d7f;
+            color: $mainColor;
         }
     }
 }
@@ -282,7 +284,7 @@ header {
         }
 
         h1 {
-            color: #f16d7f;
+            color: $mainColor;
             font-size: 24px;
             font-weight: 400;
         }
@@ -294,7 +296,7 @@ header {
             font-weight: 300;
 
             &:hover {
-                color: #f16d7f;
+                color: $mainColor;
                 font-weight: 700;
             }
         }
@@ -346,7 +348,7 @@ header {
 }
 
 .topBanner .topBannerText span:last-child {
-    color: #f16d7f;
+    color: $mainColor;
     letter-spacing: 1px;
     font-size: 40px;
     font-weight: 400;
@@ -429,7 +431,7 @@ header {
             font-weight: 400;
             letter-spacing: 0.45px;
             span {
-            color: #f16d7f;
+            color: $mainColor;
             font-size: 30px;
             letter-spacing: 0.75px;
             }
@@ -494,7 +496,7 @@ header {
                 span {
                     display: block;
                     margin-top: 15px;
-                    color: #f16d7f;
+                    color: $mainColor;
                     font-size: 16px;
                     font-weight: 700;
                 }
@@ -511,7 +513,7 @@ header {
     line-height: 54px;
     height: 50px;
     width: 210px;
-    background: #f16d7f;
+    background: $mainColor;
     margin: 0 auto;
     text-align: center;
 
@@ -549,7 +551,7 @@ header {
         letter-spacing: 1.5px; 
 
         span {
-            color: #f16d7f;
+            color: $mainColor;
             letter-spacing: 1.5px;
         }
 
@@ -890,7 +892,7 @@ header {
                 margin-top: 15px;
 
                 span {
-                    color: #f16d7f;
+                    color: $mainColor;
                 }
             }
 
@@ -904,7 +906,7 @@ header {
             a {
                 width: 273px;
                 line-height: 50px;
-                background-color: #f16d7f;
+                background-color: $mainColor;
                 color: #ffffff;
                 font-size: 16px;
                 font-weight: 700;
@@ -1164,7 +1166,7 @@ header {
             text-align: center;
 
             h3 {
-                color: #f16d7f;
+                color: $mainColor;
                 font-size: 14px;
                 font-weight: 700;
             }
@@ -1339,7 +1341,7 @@ header {
         }
 
         p {
-            color: #f16d7f;
+            color: $mainColor;
             font-size: 16px;
             font-weight: 700;
             margin-top: 15px;
@@ -1562,7 +1564,7 @@ header {
                 span {
                     display: block;
                     margin-top: 15px;
-                    color: #f16d7f;
+                    color: $mainColor;
                     font-size: 16px;
                     font-weight: 700;
                 }
@@ -1576,7 +1578,7 @@ header {
             line-height: 54px;
             height: 50px;
             width: 210px;
-            background: #f16d7f;
+            background: $mainColor;
             margin: 0 auto;
             text-align: center;
 
@@ -1773,7 +1775,7 @@ header {
     }
 
     .commentatorData {
-        color: #f16d7f;
+        color: $mainColor;
         font-size: 16px;
         font-weight: 700;
         letter-spacing: 0.4px;
@@ -1853,7 +1855,7 @@ header {
         padding-left: 0px;
         width: 104px;
         border-radius: 0 23px 23px 0;
-        background-color: #f16d7f;
+        background-color: $mainColor;
         color: #ffffff;
         font-size: 14px;
         font-weight: 400;
@@ -1902,7 +1904,7 @@ header {
         padding-left: 72px;
 
         span {
-            color: #f16d7f;
+            color: $mainColor;
             font-weight: 400;
         }
     }
@@ -1932,7 +1934,7 @@ header {
 
             a {
                 text-decoration: none;
-                color: #f16d7f;
+                color: $mainColor;
             }
         }
 
